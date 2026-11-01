@@ -1,9 +1,7 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Doméo Services Pro — V3.3</title><style>:root{font-family:system-ui,Arial;color:#203047;background:#f3f6fa}*{box-sizing:border-box}body{margin:0}header{background:#163b65;color:white;padding:18px 24px}header h1{margin:0;font-size:23px}header small{color:#dce9f7}nav{display:flex;gap:8px;overflow:auto;padding:12px;background:white;border-bottom:1px solid #ddd}button,select,input{font:inherit}button{border:0;border-radius:9px;padding:10px 14px;background:#e6edf6;color:#183c64;cursor:pointer}button.active,.primary{background:#1769aa;color:white}main{max-width:1150px;margin:auto;padding:20px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.card,.panel{background:white;border-radius:13px;padding:18px;box-shadow:0 1px 6px #0001;margin-bottom:15px}.number{font-size:27px;font-weight:750;margin-top:10px}.muted{color:#627183}.grid{display:grid;grid-template-columns:repeat(7,minmax(115px,1fr));gap:7px;overflow:auto}.day{background:#fff;border-radius:10px;padding:9px;min-height:180px;cursor:pointer}.day:focus-visible{outline:3px solid #1769aa}.day .add-hint{display:block;font-size:12px;color:#1769aa;margin-top:8px}.shift{border-left:5px solid #888;padding:8px;border-radius:7px;margin-top:8px;background:#eef3f8;font-size:13px}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}label{font-size:14px}input,select{padding:9px;border:1px solid #cbd5e1;border-radius:8px;max-width:100%}table{width:100%;border-collapse:collapse;background:white}td,th{padding:11px;text-align:left;border-bottom:1px solid #e3e8ef}th{background:#edf3f9}section[hidden],#shiftModal[hidden]{display:none}form{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}form label{display:grid;gap:5px}form button{align-self:end;min-height:46px;touch-action:manipulation}nav button{flex-shrink:0;min-height:44px;touch-action:manipulation}.scroll{overflow:auto}.hint{font-size:13px;color:#687586} @media(max-width:650px){main{padding:10px}.grid{display:flex;flex-direction:column;overflow:visible;gap:10px}.day{min-height:0;width:100%;border:1px solid #e2e8f0;padding:14px}.shift{font-size:15px;padding:12px;margin-top:10px}header{padding:15px}.row{gap:10px}#week{width:100%;order:3}#calendar{scroll-margin-top:12px}}
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Doméo Services Pro — V4.7</title><style>:root{font-family:system-ui,Arial;color:#203047;background:#f3f6fa}*{box-sizing:border-box}body{margin:0}header{background:#163b65;color:white;padding:18px 24px}header h1{margin:0;font-size:23px}header small{color:#dce9f7}nav{display:flex;gap:8px;overflow:auto;padding:12px;background:white;border-bottom:1px solid #ddd}button,select,input{font:inherit}button{border:0;border-radius:9px;padding:10px 14px;background:#e6edf6;color:#183c64;cursor:pointer}button.active,.primary{background:#1769aa;color:white}main{max-width:1150px;margin:auto;padding:20px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}.card,.panel{background:white;border-radius:13px;padding:18px;box-shadow:0 1px 6px #0001;margin-bottom:15px}.number{font-size:27px;font-weight:750;margin-top:10px}.muted{color:#627183}.grid{display:grid;grid-template-columns:repeat(7,minmax(115px,1fr));gap:7px;overflow:auto}.day{background:#fff;border-radius:10px;padding:9px;min-height:180px;cursor:pointer}.day:focus-visible{outline:3px solid #1769aa}.day .add-hint{display:block;font-size:12px;color:#1769aa;margin-top:8px}.shift{border-left:5px solid #888;padding:8px;border-radius:7px;margin-top:8px;background:#eef3f8;font-size:13px}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}label{font-size:14px}input,select{padding:9px;border:1px solid #cbd5e1;border-radius:8px;max-width:100%}table{width:100%;border-collapse:collapse;background:white}td,th{padding:11px;text-align:left;border-bottom:1px solid #e3e8ef}th{background:#edf3f9}section[hidden],#shiftModal[hidden]{display:none}form{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}form label{display:grid;gap:5px}form button{align-self:end;min-height:46px;touch-action:manipulation}nav button{flex-shrink:0;min-height:44px;touch-action:manipulation}.scroll{overflow:auto}.hint{font-size:13px;color:#687586} @media(max-width:650px){main{padding:10px}.grid{display:flex;flex-direction:column;overflow:visible;gap:10px}.day{min-height:0;width:100%;border:1px solid #e2e8f0;padding:14px}.shift{font-size:15px;padding:12px;margin-top:10px}header{padding:15px}.row{gap:10px}#week{width:100%;order:3}#calendar{scroll-margin-top:12px}}
 #quickModal[hidden]{display:none!important}#quickModal{position:fixed;inset:0;z-index:9999;background:#0009;display:flex;align-items:center;justify-content:center;padding:12px}#quickModal .quick-window{background:#fff;width:min(650px,100%);max-height:92dvh;overflow:auto;border-radius:18px;padding:16px}#quickModal .panel{box-shadow:none;margin:0;padding:6px}#quickModal .quick-top{display:flex;align-items:center;justify-content:space-between;gap:12px}#quickModal .quick-top button{font-size:22px}body.quick-open{overflow:hidden}@media(max-width:650px){#quickModal form{grid-template-columns:1fr}#quickModal .quick-window{max-height:94dvh}}
-@media(max-width:650px){#payments .cards{grid-template-columns:1fr}#payments .number{font-size:22px}#payments form{grid-template-columns:1fr}} </style></head><body><header><h1>DOMÉO SERVICES PRO</h1><small>Prototype interactif V3.5 — Équipe, espace client et pointage GPS · Démonstration locale</small></header><nav id="nav"><button class="active" data-page="dashboard">Tableau de bord</button><button data-page="planning">Planning</button><button data-page="clients">Clients</button><button data-page="team">Équipe</button><button data-page="clientportal">Espace client (démo)</button><button data-page="clockgps">Pointage GPS (test)</button><button data-page="settings33">Configuration</button><button data-page="hours">Heures et bilans</button><button data-page="requests">Demandes Airbnb</button><button data-page="payments">Règlements indépendantes</button><button data-page="clientbilling">Suivi factures clients</button></nav><main><section id="dashboard"><h2>Vue d'ensemble</h2><div class="cards" id="stats"></div><div class="panel"><h3>À traiter</h3><div id="todo"></div></div></section><section id="planning" hidden><h2>Planning hebdomadaire</h2><div class="panel"><div class="row"><button id="prev">← Semaine</button><strong id="week"></strong><button id="next">Semaine →</button><label>Couleur <select id="color"><option value="worker">Intervenante</option><option value="client">Client</option><option value="type">Prestation</option><option value="none">Sans couleur</option></select></label></div><div class="grid" id="calendar"></div></div><div class="panel"><h3>Ajouter une intervention</h3><form id="newshift"><label>Client<select name="client" id="shiftClient"></select></label><label>Intervenante<select name="worker" id="shiftWorker"></select></label><label>Date<input type="date" name="date" required></label><label>Début<input type="time" name="start" value="09:00" required></label><label>Durée (h)<input type="number" name="hours" min="0.5" step="0.5" value="2" required></label><label>Type de travaux<select name="type" id="shiftType33"></select></label><label>Répétition<select name="repeat" id="repeatMode"><option value="none">Une seule fois</option><option value="week">Chaque semaine</option><option value="fortnight">Toutes les 2 semaines</option><option value="month">Chaque mois</option></select></label><label id="repeatEndWrap" hidden>Date de fin<input type="date" name="repeatEnd" id="repeatEnd"></label><button type="submit" class="primary">Ajouter</button><div id="feedback" role="status" style="grid-column:1/-1;font-weight:700;color:#166534" aria-live="polite"></div></form></div></section><section id="clients" hidden><h2>Fiches clients</h2><div class="panel"><button class="primary" id="newClientBtn" type="button">+ Nouveau client</button><p class="hint">Données de démonstration. Les fiches sont conservées uniquement dans ce navigateur.</p><div id="clientcards"></div></div><div class="panel" id="clientEditor" hidden><h3 id="clientEditorTitle">Nouveau client</h3><form id="clientForm"><label>Nom ou raison sociale<input name="name" required maxlength="120"></label><label>Catégorie<select name="cat"><option value="SAP">Particulier (SAP)</option><option value="PRO">Professionnel (PRO)</option></select></label><label>Téléphone<input name="phone" type="tel"></label><label>E-mail<input name="email" type="email"></label><label>Adresse complète<input name="address"></label><label>Logement / site<input name="home"></label><label>Tarif horaire (€)<input name="rate" type="number" min="0" step="0.01" required></label><label style="grid-column:1/-1">Notes<textarea name="notes" rows="3" style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:8px"></textarea></label><button class="primary" type="submit">Enregistrer le client</button><button type="button" id="cancelClient">Annuler</button></form><p id="clientFeedback" role="status"></p></div></section><section id="team" hidden><h2>Équipe — indépendants et employés</h2><div class="panel"><button class="primary" type="button" id="addWorker">+ Nouvelle personne</button><p class="hint">Utilise des noms fictifs pour les essais.</p><div id="workerNotice" role="status"></div></div><div class="cards" id="workers"></div><div class="panel" id="workerEditor" hidden><h3 id="workerTitle">Intervenante</h3><form id="workerForm"><label>Nom<input name="name" required maxlength="100"></label><label>Téléphone<input name="phone" type="tel"></label><label>E-mail<input name="email" type="email"></label><label>Statut<select name="kind" id="workerKind"><option value="independent">Indépendant</option><option value="employee">Employé / stagiaire</option></select></label><label id="siretWrap">SIRET de l’indépendant<input name="siret" inputmode="numeric" maxlength="14" placeholder="14 chiffres"></label><label id="contractWrap" hidden>Contrat / statut<select name="contract"><option value="CDI">CDI</option><option value="CDD">CDD</option><option value="Stage">Stage</option><option value="Alternance">Alternance</option><option value="Autre">Autre</option></select></label><label>Couleur du planning<input name="color" type="color" value="#3878c6" style="width:100%;height:50px"></label><button class="primary" type="submit">Enregistrer l’intervenante</button><button type="button" id="cancelWorker">Annuler</button></form></div></section><section id="hours" hidden><h2>Heures et bilans</h2><div class="panel row"><label>Mois <input type="month" id="month"></label><span class="hint">Calcul sur missions terminées uniquement. Montants de prestations, pas encaissements.</span></div><div class="cards" id="totals"></div><div class="panel"><h3>Heures par intervenante — relevé des prestations</h3><p class="hint">Seules les missions marquées « Terminée » sont comptées comme travaillées. Les absences ne sont pas des heures effectuées. Ce relevé sert à contrôler les prestations des indépendantes et ne remplace pas leurs factures.</p><div class="scroll"><table><thead><tr><th>Intervenante</th><th>Heures prévues</th><th>Heures effectuées</th><th>Heures d’absence</th><th>Missions terminées</th></tr></thead><tbody id="workerHourRows"></tbody></table></div><button id="exportHours" type="button">Exporter le bilan CSV</button></div><div class="panel scroll"><table><thead><tr><th>Client</th><th>Catégorie</th><th>Heures</th><th>Tarif</th><th>Prestations</th></tr></thead><tbody id="hourrows"></tbody></table></div></section><section id="requests" hidden><h2>Demandes de prestations Airbnb</h2><div class="panel"><p>Les demandes ne créent jamais de mission confirmée automatiquement.</p><div id="reqrows"></div></div></section><p class="hint">Démo locale : les interventions sont sauvegardées dans ce navigateur (elles peuvent disparaître si les données du navigateur sont effacées). Pas de comptes, notifications, partage GPS, stockage sécurisé ou données réelles. Les fonctions avancées du cahier des charges seront ajoutées par étapes.</p><section id="clientbilling" hidden><h2>Suivi des factures NeedMe et encaissements</h2><p class="hint">NeedMe reste le logiciel de facturation. Ici, on enregistre seulement les références des factures et les paiements reçus. Aucune facture officielle n’est créée.</p><div class="panel"><h3 id="cbFormTitle">Enregistrer une facture NeedMe</h3><p class="hint">Saisis ici les informations d’une facture déjà créée dans NeedMe. Le formulaire est vide pour un nouvel enregistrement.</p><button type="button" id="cbNewDraft">+ Autre facture NeedMe</button><p id="cbEditNotice" class="hint"></p><form id="cbInvoice"><label>Client<select name="client" id="cbClient" required></select></label><label>Numéro NeedMe<input name="number" required placeholder="Ex. numéro attribué par NeedMe"></label><label>Date<input type="date" name="date" required></label><label>Échéance<input type="date" name="due" required></label><label>Prestation (facultatif)<input name="description" placeholder="Description du service"></label><label>Montant TTC (€)<input type="number" name="amount" min="0.01" step="0.01" required></label><button class="primary" id="cbSaveButton">Enregistrer le suivi</button><button type="button" id="cbCancelEdit" hidden>Annuler les modifications</button></form><p id="cbNotice" role="status"></p></div><div class="panel"><h3>Enregistrer un règlement client</h3><form id="cbPayment"><label>Facture<select name="invoice" id="cbOpenInvoices" required></select></label><label>Date du règlement<input type="date" name="date" required></label><label>Montant reçu (€)<input type="number" name="amount" min="0.01" step="0.01" required></label><label>Mode<select name="method"><option>Virement</option><option>Carte</option><option>Chèque</option><option>Espèces</option><option>Autre</option></select></label><button class="primary">Enregistrer le règlement</button></form></div><div class="panel"><h3>Factures en retard et relances</h3><p class="hint">Prépare le message, copie-le si besoin, puis confirme séparément son envoi réel. Aucun SMS ou e-mail n’est envoyé par Doméo. Les anciennes relances notées restent identifiées comme non confirmées.</p><div id="lateSummary" class="cards"></div><div class="panel" style="margin:12px 0"><h4>Historique des relances</h4><label>Filtrer par client <select id="historyClient"><option value="all">Tous les clients</option></select></label><div id="reminderHistory"></div><p class="hint">Les anciennes relances de la V2.9/V3.0 sont conservées avec leur statut connu. Les confirmations manuelles ne prouvent pas l’envoi effectif.</p></div><div id="lateInvoices"></div><div id="reminderDraft" class="card" hidden><h4>Message de relance préparé</h4><textarea id="reminderDraftText" rows="9" readonly style="width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:8px"></textarea><p><button type="button" id="reminderCopyBtn">Copier le message</button> <button type="button" id="reminderEmailBtn" class="primary">Ouvrir la messagerie</button> <button type="button" id="reminderCloseBtn">Fermer</button></p><p class="hint">La messagerie s’ouvre avec un brouillon. Aucun envoi automatique : vérifie le destinataire et appuie toi-même sur Envoyer.</p></div><p id="lateNotice" role="status"></p></div><div class="panel"><h3>Suivi des factures NeedMe</h3><div class="row"><label>Client<select id="cbFilterClient"><option value="all">Tous</option></select></label><label>Catégorie<select id="cbFilterCat"><option value="all">Toutes</option><option value="SAP">Particuliers SAP</option><option value="PRO">Professionnels</option></select></label><label>Statut<select id="cbFilterStatus"><option value="all">Tous</option><option value="unpaid">Impayées</option><option value="partial">Partiellement réglées</option><option value="paid">Payées</option></select></label><label>Mois<input id="cbMonth" type="month"></label><button type="button" id="cbAllMonths">Tous les mois</button></div><div id="cbTotals" class="cards"></div><div id="cbList"></div></div><div class="panel" id="cbDetail" hidden><h3>Détail de la facture</h3><div id="cbDetailBody"></div><button type="button" id="cbCloseDetail">Fermer</button></div></section><section id="payments" hidden><h2>Règlements des intervenantes indépendantes</h2><p class="hint">Simulation locale. Montants indicatifs calculés sur les interventions terminées, à rapprocher des factures des prestataires. Aucune facture ni paiement réel n'est généré.</p><div class="panel"><h3>Tarif et fréquence par intervenante</h3><div id="rateCards" class="cards"></div></div><div class="panel"><h3>Relevé des prestations</h3><div class="row"><label>Intervenante <select id="payWorker"></select></label><label>Période <select id="payPeriod"><option value="month">Mensuelle</option><option value="week">Hebdomadaire</option></select></label><label id="payMonthWrap">Mois <input type="month" id="payMonth"></label><label id="payWeekWrap" hidden>Semaine du <input type="date" id="payWeek"></label></div><div id="paySummary" class="cards"></div><div class="scroll"><table><thead><tr><th>Date</th><th>Client</th><th>Heures</th><th>Tarif retenu</th><th>Montant</th></tr></thead><tbody id="payRows"></tbody></table></div><p class="hint">Le tarif des prestations terminées est conservé pour les bilans historiques. Dans cette démonstration, les anciens tarifs enregistrés à 0 € sont corrigés avec le tarif positif configuré pour l’intervenante. Vérifiez les anciens tarifs avant toute utilisation réelle.</p></div><div class="panel"><h3>Factures et règlements</h3><form id="payInvoiceForm"><label>Numéro NeedMe<input name="invoice" required maxlength="80" placeholder="Ex. numéro attribué par NeedMe"></label><label>Date facture<input name="date" type="date" required></label><label>Montant facturé (€)<input name="amount" type="number" min="0.01" step="0.01" required></label><button class="primary" type="submit">Enregistrer la facture</button></form><form id="payPaidForm" style="margin-top:12px"><label>Facture concernée<select name="invoiceId" id="invoiceSelect" required></select></label><label>Date du règlement<input name="date" type="date" required></label><label>Montant réglé (€)<input name="amount" type="number" min="0.01" step="0.01" required></label><button class="primary" type="submit">Enregistrer un règlement</button></form><div id="payNotice" role="status" style="margin:10px 0;color:#1769aa"></div><div id="invoiceCards"></div></div><div class="panel"><h3>Tableau de suivi des factures</h3><p class="hint">Factures saisies, toutes intervenantes. Les filtres n’affectent pas les données enregistrées.</p><div class="row"><label>Intervenante <select id="trackWorker"><option value="all">Toutes</option></select></label><label>Mois de facture <input type="month" id="trackMonth"></label><button type="button" id="trackAllMonths">Tous les mois</button><label>Statut <select id="trackStatus"><option value="all">Tous</option><option value="unpaid">À régler</option><option value="partial">Partiellement réglées</option><option value="paid">Payées</option></select></label></div><div id="trackTotals" class="cards"></div><div id="trackCards"></div></div></section><section id="clientportal" hidden><h2>Espace client — démonstration</h2><p class="v33note">Aperçu uniquement : il ne s'agit pas d'un compte client sécurisé. Les commentaires sont stockés dans ce navigateur, sans transmission à un autre téléphone.</p><div class="panel"><label>Afficher la fiche de <select id="portalClient33"></select></label><div id="portalShifts33"></div></div></section>
-<section id="clockgps" hidden><h2>Pointage GPS — essai sur téléphone</h2><div class="panel"><p class="hint"><strong>Option entreprise avec équipe : 10 €/mois.</strong> Test local uniquement, sans facturation. Le GPS est demandé seulement quand on appuie sur un bouton. Aucune surveillance continue.</p><label>Intervention <select id="gpsShift"></select></label><p id="gpsMission"></p><div class="row"><button type="button" class="primary" id="gpsArrive">Pointer mon arrivée</button><button type="button" id="gpsLeave">Pointer mon départ</button></div><p id="gpsNotice" role="status" aria-live="polite" style="padding:12px;background:#fff4d6;color:#624500;border-radius:8px;font-weight:700">Appuie sur un bouton de pointage pour vérifier la localisation.</p><div id="gpsHistory"></div><div class="panel" style="margin-top:14px;background:#eff6ff"><h3>Diagnostic GPS</h3><p id="gpsDiagnostic" role="status"></p><button type="button" id="gpsCheck">Vérifier la compatibilité GPS</button><p class="hint">Le diagnostic ne demande pas votre position. Pour une localisation réelle, ouvrez l'application sur un site HTTPS, puis autorisez la position au moment du pointage.</p></div><p class="hint">Les données sont enregistrées seulement dans ce navigateur pour le test. Elles ne sont pas transmises à Carla. La position nécessite l'autorisation du téléphone et un contexte sécurisé (HTTPS ou localhost) ; un fichier HTML ouvert directement peut être bloqué. Ne pas utiliser comme preuve de présence ni pour le contrôle réel des salariés.</p></div></section><section id="settings33" hidden><h2>Configuration entreprise</h2><div class="panel"><h3>Types de travaux personnalisés</h3><p class="hint">La responsable choisit librement les intitulés utilisés dans les missions.</p><div id="typesList33"></div><form id="addType33"><label>Nouvel intitulé<input name="type" required placeholder="Ex. Nettoyage du four"></label><button class="primary">Ajouter ce type</button></form></div><div class="panel"><h3>Chiffre d'affaires par client et par mois</h3><p class="hint">Estimation des prestations terminées : heures × tarif client enregistré. Ce n'est pas le chiffre d'affaires comptable issu des factures NeedMe.</p><label>Mois <input type="month" id="caMonth33"></label><div class="scroll"><table><thead><tr><th>Client</th><th>Heures terminées</th><th>Prestations estimées</th></tr></thead><tbody id="caRows33"></tbody></table></div></div><div class="panel"><h3>Forfaits commerciaux — à définir</h3><p>Prévoir des formules avec ou sans engagement, facturation mensuelle ou annuelle. Tarifs de base à fixer ultérieurement.</p><p><strong>Option Pointeuse GPS :</strong> 10 € / mois / entreprise avec équipe, jamais facturée aux clients ni aux intervenants. Non proposée en Solo.</p><p class="hint">La pointeuse GPS opérationnelle, les comptes personnels et la synchronisation nécessitent une véritable application sécurisée. Ils ne sont pas activés dans cette démo.</p></div></section>
-</main><div id="shiftModal" hidden style="position:fixed;inset:0;background:#0008;z-index:99;overflow:auto;padding:15px"><div class="panel" style="max-width:540px;margin:25px auto;padding:22px"><div class="row" style="justify-content:space-between"><h2>Fiche intervention</h2><button type="button" onclick="closeShift()" aria-label="Fermer">✕</button></div><form id="editshift" style="display:grid;grid-template-columns:1fr 1fr"><label style="grid-column:1/-1">Client<select name="client" required></select></label><label style="grid-column:1/-1">Intervenante<select name="worker" required></select></label><label>Date<input type="date" name="date" required></label><label>Début<input type="time" name="start" required></label><label>Durée (h)<input type="number" name="hours" min="0.5" step="0.5" required></label><label>Type de travaux<select name="type" id="shiftType33"></select></label><label style="grid-column:1/-1">Statut<select name="status"><option>Confirmée</option><option>Terminée</option><option>Annulée</option><option>Absence client</option><option>Absence intervenante</option><option>Absence</option></select></label><div id="absenceFields" style="grid-column:1/-1;display:none"><label>Motif de l’absence<select name="absenceReason"><option value="">Choisir un motif</option><option>Client indisponible</option><option>Client absent au rendez-vous</option><option>Intervenante malade</option><option>Intervenante indisponible</option><option>Autre</option></select></label><label style="display:grid;margin-top:12px">Commentaire (facultatif)<textarea name="absenceComment" rows="3" style="padding:10px;border:1px solid #cbd5e1;border-radius:8px;font:inherit;width:100%"></textarea></label><p class="hint"><strong>Absence : 0 € facturé.</strong> Les heures prévues restent visibles au planning, mais ne comptent pas comme réalisées.</p></div><label style="grid-column:1/-1" id="seriesScopeWrap" hidden>Appliquer les modifications à<select id="seriesScope"><option value="one">Cette intervention uniquement</option><option value="future">Cette intervention et les suivantes de la série</option><option value="all">Toute la série</option></select></label><p id="seriesNotice" class="hint" style="grid-column:1/-1"></p><button class="primary" type="submit" style="grid-column:1/-1">Enregistrer les modifications</button><button type="button" onclick="closeShift()" style="grid-column:1/-1">Fermer sans modifier</button></form></div></div><div id="quickModal" hidden role="dialog" aria-modal="true" aria-label="Nouvelle intervention"><div class="quick-window"><button type="button" id="closeQuick" aria-label="Fermer la fenêtre" style="float:right;margin-bottom:10px">✕ Fermer</button><div id="quickSlot"></div></div></div><script>
-let clients=[{id:1,name:'Mme Martin (fictif)',cat:'SAP',home:'Domicile',rate:34},{id:2,name:'Conciergerie Soleil (fictif)',cat:'PRO',home:'T2 Lavande',rate:45},{id:3,name:'Bureaux Azur (fictif)',cat:'PRO',home:'Bureaux',rate:30},{id:4,name:'M. Bernard (fictif)',cat:'SAP',home:'Domicile',rate:32}];try{const saved=JSON.parse(localStorage.getItem('domeo_clients_v1'));if(Array.isArray(saved)&&saved.length)clients=saved;}catch(e){}const workers=[{id:1,name:'Emma (fictive)',color:'#3878c6'},{id:2,name:'Lina (fictive)',color:'#a25ac0'},{id:3,name:'Sarah (fictive)',color:'#159a85'}];let today=new Date(),offset=0;const storageKey='domeo-v19-shifts';const iso=d=>[d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');let monday=new Date(today);monday.setDate(today.getDate()-(today.getDay()+6)%7);const plus=(d,n)=>{let a=new Date(d);a.setDate(a.getDate()+n);return a};let shifts=[{client:1,worker:1,date:iso(plus(monday,0)),start:'09:00',hours:3,type:'Ménage',status:'Terminée'},{client:2,worker:2,date:iso(plus(monday,1)),start:'11:00',hours:2,type:'Airbnb',status:'Confirmée'},{client:3,worker:3,date:iso(plus(monday,2)),start:'08:30',hours:4,type:'Ménage',status:'Terminée'},{client:4,worker:1,date:iso(plus(monday,4)),start:'14:00',hours:2,type:'Vitres',status:'Absence'}];try{const saved=JSON.parse(localStorage.getItem(storageKey)||'null');if(Array.isArray(saved))shifts=saved;}catch(err){console.warn('Stockage indisponible',err)}const saveShifts=()=>{try{localStorage.setItem(storageKey,JSON.stringify(shifts))}catch(err){console.warn('Sauvegarde indisponible',err)}};let requests=[{home:'T2 Lavande',date:iso(plus(monday,5)),details:'Ménage, changement des draps, départ 10 h / arrivée 16 h',status:'À traiter'}];const money=n=>n.toLocaleString('fr-FR',{style:'currency',currency:'EUR'});const find=(arr,id)=>arr.find(x=>x.id==id);const statusColor={'Absence client':'#d43c3c','Absence intervenante':'#d43c3c','Annulée':'#888888',Terminée:'#239d62',Confirmée:'#3878c6',Absence:'#d43c3c','À traiter':'#e18b1c'};function cards(id,arr){document.getElementById(id).innerHTML=arr.map(x=>`<div class="card"><span class="muted">${x[0]}</span><div class="number">${x[1]}</div></div>`).join('')}function render(){let done=shifts.filter(s=>s.status==='Terminée');cards('stats',[['Clients',clients.length],['Intervenantes',workers.length],['Heures terminées',done.reduce((a,s)=>a+s.hours,0)+' h'],['Prestations réalisées',money(done.reduce((a,s)=>a+s.hours*(find(clients,s.client)?.rate||0),0))]]);document.getElementById('todo').textContent=`${requests.filter(x=>x.status==='À traiter').length} demande(s) Airbnb à traiter · ${shifts.filter(x=>String(x.status||'').startsWith('Absence')).length} absence(s) signalée(s)`;document.getElementById('workers').innerHTML=workers.map(w=>`<div class="card"><span class="dot" style="background:${w.color}"></span><b>${w.name}</b></div>`).join('');document.getElementById('shiftClient').innerHTML=clients.map(c=>`<option value="${c.id}">${c.name}</option>`).join('');document.getElementById('shiftWorker').innerHTML=workers.map(w=>`<option value="${w.id}">${w.name}</option>`).join('');renderCalendar();renderHours();renderRequests()}function renderCalendar(){let start=plus(monday,offset*7);document.getElementById('week').textContent=`Du ${start.toLocaleDateString('fr-FR')} au ${plus(start,6).toLocaleDateString('fr-FR')}`;let mode=document.getElementById('color').value;document.getElementById('calendar').innerHTML=Array.from({length:7},(_,i)=>{let d=plus(start,i),ds=iso(d);return `<div class="day" role="button" tabindex="0" aria-label="Ajouter une intervention le ${ds}" onclick="quickAdd('${ds}')" onkeydown="if(event.target===this&&(event.key==='Enter'||event.key===' ')){event.preventDefault();quickAdd('${ds}')}" ><b>${d.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'short'})}</b>${shifts.filter(s=>s.date===ds).map(s=>{let shiftIndex=shifts.indexOf(s);let c=find(clients,s.client)||{id:0,name:'Client introuvable'},w=find(workers,s.worker)||{name:'Intervenante introuvable',color:'#888888'},clr=mode==='worker'?w.color:mode==='client'?(['#3176a8','#b85f78','#9b7b22','#32957d'][c.id-1]||'#888888'):mode==='type'?({'Ménage':'#5689bb','Vitres':'#8b65b9','Airbnb':'#d3892c'}[s.type]):'#aab2bd';return `<div class="shift" role="button" tabindex="0" onclick="event.stopPropagation();openShift(${shiftIndex})" onkeydown="if(event.key==='Enter'){event.stopPropagation();openShift(${shiftIndex})}" style="border-color:${clr};cursor:pointer"><span class="dot" style="background:${statusColor[s.status]}"></span><b>${s.start} · ${s.hours} h</b><div>${c.name}</div><div>${w.name}</div><small>${s.status}</small>${String(s.status||'').startsWith('Absence')?`<div style="color:#a32d2d;font-weight:700">0 € facturé</div>${s.absenceReason?`<small>${s.absenceReason.replace(/</g,'&lt;')}</small>`:''}`:''}</div>`}).join('')}<span class="add-hint">+ Ajouter une intervention</span></div>`}).join('')}function quickAdd(date){
+@media(max-width:650px){#payments .cards{grid-template-columns:1fr}#payments .number{font-size:22px}#payments form{grid-template-columns:1fr}}  .dash-link{display:block;width:100%;text-align:left;color:#203047;cursor:pointer;font:inherit;border:2px solid transparent}.dash-link:focus-visible{outline:3px solid #1769aa}.dash-link:active{border-color:#1769aa}.dash-link .hint{display:block;margin-top:10px;color:#1769aa;font-weight:600}</style><style id="v39style">.v39-actions{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.v39-actions a{display:inline-flex;align-items:center;justify-content:center;gap:5px;text-decoration:none;background:#1769aa;color:white;padding:11px 14px;border-radius:9px;min-height:44px;font-weight:650}.v39-actions a.call{background:#18794e}.v39-actions .disabled{background:#e8edf2;color:#64748b;padding:11px;border-radius:9px}.v39-details{margin-top:12px;border-top:1px solid #ddd;padding-top:12px}.v39-details summary{cursor:pointer;font-weight:700;padding:8px 0}.v39-details p{margin:8px 0}.v39-mode{background:#e9f3ff;padding:12px;border-radius:12px;margin-bottom:12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}.v39-mode select{min-width:160px}body.v39-solo nav button[data-page="team"],body.v39-solo nav button[data-page="payments"]{display:none!important}</style></head><body><header><h1>DOMÉO SERVICES PRO</h1><small>Prototype interactif V4.9 — Ma journée · Modes Solo et Pro · Démonstration locale</small></header><nav id="nav"><button class="active" data-page="dashboard">Tableau de bord</button><button data-page="planning">Planning</button><button data-page="clients">Clients</button><button data-page="team">Intervenantes</button><button data-page="hours">Heures et bilans</button><button data-page="requests">Demandes Airbnb</button><button data-page="payments">Règlements indépendantes</button><button data-page="clientbilling">Suivi factures clients</button><button data-page="backup">Sauvegarde</button></nav><main><section id="dashboard"><h2>Vue d'ensemble</h2><div class="panel" id="dailyDashboard"><h3>Centre de pilotage</h3><div class="row"><label>Journée <input id="dashDate" type="date"></label><button type="button" id="dashToday">Aujourd’hui</button><button type="button" id="dashRefresh">Actualiser</button></div><div id="dashCards" class="cards"></div><h3>Interventions de la journée</h3><div id="dashShifts"></div><h3>Factures clients à suivre</h3><div id="dashInvoices"></div><p class="hint">Données locales de démonstration. Les totaux de facturation sont distincts des prestations réalisées. Aucun e-mail n'est envoyé automatiquement.</p></div><div class="cards" id="stats"></div><div class="panel"><h3>À traiter</h3><div id="todo"></div></div></section><section id="planning" hidden><h2>Planning hebdomadaire</h2><div class="panel"><div class="row"><button id="prev">← Semaine</button><strong id="week"></strong><button id="next">Semaine →</button><label>Couleur <select id="color"><option value="worker">Intervenante</option><option value="client">Client</option><option value="type">Prestation</option><option value="none">Sans couleur</option></select></label></div><div class="grid" id="calendar"></div></div><div class="panel"><h3>Ajouter une intervention</h3><form id="newshift"><label>Client<select name="client" id="shiftClient"></select></label><label>Intervenante<select name="worker" id="shiftWorker"></select></label><label>Date<input type="date" name="date" required></label><label>Début<input type="time" name="start" value="09:00" required></label><label>Durée (h)<input type="number" name="hours" min="0.5" step="0.5" value="2" required></label><label>Type<select name="type"><option>Ménage</option><option>Vitres</option><option>Airbnb</option></select></label><label>Répétition<select name="repeat" id="repeatMode"><option value="none">Une seule fois</option><option value="week">Chaque semaine</option><option value="fortnight">Toutes les 2 semaines</option><option value="month">Chaque mois</option></select></label><label id="repeatEndWrap" hidden>Date de fin<input type="date" name="repeatEnd" id="repeatEnd"></label><button type="submit" class="primary">Ajouter</button><div id="feedback" role="status" style="grid-column:1/-1;font-weight:700;color:#166534" aria-live="polite"></div></form></div></section><section id="clients" hidden><h2>Fiches clients</h2><div class="panel"><button class="primary" id="newClientBtn" type="button">+ Nouveau client</button><p class="hint">Données de démonstration. Les fiches sont conservées uniquement dans ce navigateur.</p><div id="clientcards"></div></div><div class="panel" id="clientEditor" hidden><h3 id="clientEditorTitle">Nouveau client</h3><form id="clientForm"><label>Nom ou raison sociale<input name="name" required maxlength="120"></label><label>Catégorie<select name="cat"><option value="SAP">Particulier (SAP)</option><option value="PRO">Professionnel (PRO)</option></select></label><label>Téléphone<input name="phone" type="tel"></label><label>E-mail<input name="email" type="email"></label><label>Adresse complète<input name="address"></label><label>Logement / site<input name="home"></label><label>Tarif horaire (€)<input name="rate" type="number" min="0" step="0.01" required></label><label style="grid-column:1/-1">Notes<textarea name="notes" rows="3" style="width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:8px"></textarea></label><button class="primary" type="submit">Enregistrer le client</button><button type="button" id="cancelClient">Annuler</button></form><p id="clientFeedback" role="status"></p></div></section><section id="team" hidden><h2>Intervenantes</h2><div class="panel"><button class="primary" type="button" id="addWorker">+ Nouvelle intervenante</button><p class="hint">Utilise des noms fictifs pour les essais.</p><div id="workerNotice" role="status"></div></div><div class="cards" id="workers"></div><div class="panel" id="workerEditor" hidden><h3 id="workerTitle">Intervenante</h3><form id="workerForm"><label>Nom<input name="name" required maxlength="100"></label><label>Téléphone<input name="phone" type="tel"></label><label>E-mail<input name="email" type="email"></label><label>Couleur du planning<input name="color" type="color" value="#3878c6" style="width:100%;height:50px"></label><button class="primary" type="submit">Enregistrer l’intervenante</button><button type="button" id="cancelWorker">Annuler</button></form></div></section><section id="hours" hidden><h2>Heures et bilans</h2><div class="panel row"><label>Mois <input type="month" id="month"></label><span class="hint">Calcul sur missions terminées uniquement. Montants de prestations, pas encaissements.</span></div><div class="cards" id="totals"></div><div class="panel"><h3>Heures par intervenante — relevé des prestations</h3><p class="hint">Seules les missions marquées « Terminée » sont comptées comme travaillées. Les absences ne sont pas des heures effectuées. Ce relevé sert à contrôler les prestations des indépendantes et ne remplace pas leurs factures.</p><div class="scroll"><table><thead><tr><th>Intervenante</th><th>Heures prévues</th><th>Heures effectuées</th><th>Heures d’absence</th><th>Missions terminées</th></tr></thead><tbody id="workerHourRows"></tbody></table></div><button id="exportHours" type="button">Exporter le bilan CSV</button></div><div class="panel scroll"><table><thead><tr><th>Client</th><th>Catégorie</th><th>Heures</th><th>Tarif</th><th>Prestations</th></tr></thead><tbody id="hourrows"></tbody></table></div></section><section id="requests" hidden><h2>Demandes de prestations Airbnb</h2><div class="panel"><p>Les demandes ne créent jamais de mission confirmée automatiquement.</p><div id="reqrows"></div></div></section><p class="hint">Démo locale : les interventions sont sauvegardées dans ce navigateur (elles peuvent disparaître si les données du navigateur sont effacées). Pas de comptes, notifications, GPS, stockage sécurisé ou données réelles. Les fonctions avancées du cahier des charges seront ajoutées par étapes.</p><section id="clientbilling" hidden><h2>Suivi des factures NeedMe et encaissements</h2><p class="hint">NeedMe reste le logiciel de facturation. Ici, on enregistre seulement les références des factures et les paiements reçus. Aucune facture officielle n’est créée.</p><div class="panel"><h3 id="cbFormTitle">Enregistrer une facture NeedMe</h3><p class="hint">Saisis ici les informations d’une facture déjà créée dans NeedMe. Le formulaire est vide pour un nouvel enregistrement.</p><button type="button" id="cbNewDraft">+ Autre facture NeedMe</button><p id="cbEditNotice" class="hint"></p><form id="cbInvoice"><label>Client<select name="client" id="cbClient" required></select></label><label>Numéro NeedMe<input name="number" required placeholder="Ex. numéro attribué par NeedMe"></label><label>Date<input type="date" name="date" required></label><label>Échéance<input type="date" name="due" required></label><label>Prestation (facultatif)<input name="description" placeholder="Description du service"></label><label>Montant TTC (€)<input type="number" name="amount" min="0.01" step="0.01" required></label><button class="primary" id="cbSaveButton">Enregistrer le suivi</button><button type="button" id="cbCancelEdit" hidden>Annuler les modifications</button></form><p id="cbNotice" role="status"></p></div><div class="panel"><h3>Enregistrer un règlement client</h3><form id="cbPayment"><label>Facture<select name="invoice" id="cbOpenInvoices" required></select></label><label>Date du règlement<input type="date" name="date" required></label><label>Montant reçu (€)<input type="number" name="amount" min="0.01" step="0.01" required></label><label>Mode<select name="method"><option>Virement</option><option>Carte</option><option>Chèque</option><option>Espèces</option><option>Autre</option></select></label><button class="primary">Enregistrer le règlement</button></form></div><div class="panel"><h3>Factures en retard et relances</h3><p class="hint">Prépare le message, copie-le si besoin, puis confirme séparément son envoi réel. Aucun SMS ou e-mail n’est envoyé par Doméo. Les anciennes relances notées restent identifiées comme non confirmées.</p><div id="lateSummary" class="cards"></div><div class="panel" style="margin:12px 0"><h4>Historique des relances</h4><label>Filtrer par client <select id="historyClient"><option value="all">Tous les clients</option></select></label><div id="reminderHistory"></div><p class="hint">Les anciennes relances de la V2.9/V3.0 sont conservées avec leur statut connu. Les confirmations manuelles ne prouvent pas l’envoi effectif.</p></div><div id="lateInvoices"></div><div id="reminderDraft" class="card" hidden><h4>Message de relance préparé</h4><textarea id="reminderDraftText" rows="9" readonly style="width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:8px"></textarea><p><button type="button" id="reminderCopyBtn">Copier le message</button> <button type="button" id="reminderEmailBtn" class="primary">Ouvrir la messagerie</button> <button type="button" id="reminderCloseBtn">Fermer</button></p><p class="hint">La messagerie s’ouvre avec un brouillon. Aucun envoi automatique : vérifie le destinataire et appuie toi-même sur Envoyer.</p></div><p id="lateNotice" role="status"></p></div><div class="panel"><h3>Suivi des factures NeedMe</h3><div class="row"><label>Client<select id="cbFilterClient"><option value="all">Tous</option></select></label><label>Catégorie<select id="cbFilterCat"><option value="all">Toutes</option><option value="SAP">Particuliers SAP</option><option value="PRO">Professionnels</option></select></label><label>Statut<select id="cbFilterStatus"><option value="all">Tous</option><option value="unpaid">Impayées</option><option value="partial">Partiellement réglées</option><option value="paid">Payées</option></select></label><label>Mois<input id="cbMonth" type="month"></label><button type="button" id="cbAllMonths">Tous les mois</button></div><div id="cbTotals" class="cards"></div><div id="cbList"></div></div><div class="panel" id="cbDetail" hidden><h3>Détail de la facture</h3><div id="cbDetailBody"></div><button type="button" id="cbCloseDetail">Fermer</button></div></section><section id="payments" hidden><h2>Règlements des intervenantes indépendantes</h2><p class="hint">Simulation locale. Montants indicatifs calculés sur les interventions terminées, à rapprocher des factures des prestataires. Aucune facture ni paiement réel n'est généré.</p><div class="panel"><h3>Tarif et fréquence par intervenante</h3><div id="rateCards" class="cards"></div></div><div class="panel"><h3>Relevé des prestations</h3><div class="row"><label>Intervenante <select id="payWorker"></select></label><label>Période <select id="payPeriod"><option value="month">Mensuelle</option><option value="week">Hebdomadaire</option></select></label><label id="payMonthWrap">Mois <input type="month" id="payMonth"></label><label id="payWeekWrap" hidden>Semaine du <input type="date" id="payWeek"></label></div><div id="paySummary" class="cards"></div><div class="scroll"><table><thead><tr><th>Date</th><th>Client</th><th>Heures</th><th>Tarif retenu</th><th>Montant</th></tr></thead><tbody id="payRows"></tbody></table></div><p class="hint">Le tarif des prestations terminées est conservé pour les bilans historiques. Dans cette démonstration, les anciens tarifs enregistrés à 0 € sont corrigés avec le tarif positif configuré pour l’intervenante. Vérifiez les anciens tarifs avant toute utilisation réelle.</p></div><div class="panel"><h3>Factures et règlements</h3><form id="payInvoiceForm"><label>Numéro NeedMe<input name="invoice" required maxlength="80" placeholder="Ex. numéro attribué par NeedMe"></label><label>Date facture<input name="date" type="date" required></label><label>Montant facturé (€)<input name="amount" type="number" min="0.01" step="0.01" required></label><button class="primary" type="submit">Enregistrer la facture</button></form><form id="payPaidForm" style="margin-top:12px"><label>Facture concernée<select name="invoiceId" id="invoiceSelect" required></select></label><label>Date du règlement<input name="date" type="date" required></label><label>Montant réglé (€)<input name="amount" type="number" min="0.01" step="0.01" required></label><button class="primary" type="submit">Enregistrer un règlement</button></form><div id="payNotice" role="status" style="margin:10px 0;color:#1769aa"></div><div id="invoiceCards"></div></div><div class="panel"><h3>Tableau de suivi des factures</h3><p class="hint">Factures saisies, toutes intervenantes. Les filtres n’affectent pas les données enregistrées.</p><div class="row"><label>Intervenante <select id="trackWorker"><option value="all">Toutes</option></select></label><label>Mois de facture <input type="month" id="trackMonth"></label><button type="button" id="trackAllMonths">Tous les mois</button><label>Statut <select id="trackStatus"><option value="all">Tous</option><option value="unpaid">À régler</option><option value="partial">Partiellement réglées</option><option value="paid">Payées</option></select></label></div><div id="trackTotals" class="cards"></div><div id="trackCards"></div></div></section><section id="backup" hidden><h2>Sauvegarde et restauration</h2><div class="panel"><h3>Enregistrer une copie de tes données</h3><p>Crée un fichier JSON contenant les données Doméo enregistrées dans ce navigateur : clients, intervenantes, planning, factures, paiements et relances. Conserve-le dans un endroit privé et sûr.</p><p class="hint">Les données restent sur cet appareil tant que tu ne télécharges pas de sauvegarde. Aucune transmission vers un serveur.</p><button class="primary" type="button" id="backupExport">Télécharger ma sauvegarde</button><p id="backupExportStatus" role="status"></p></div><div class="panel"><h3>Restaurer une sauvegarde</h3><p><strong>Attention :</strong> la restauration remplace les données Doméo présentes dans ce navigateur. Fais d'abord une sauvegarde de tes données actuelles.</p><label>Choisir un fichier de sauvegarde Doméo (.json)<input id="backupFile" type="file" accept=".json,application/json" style="display:block;margin-top:8px"></label><p id="backupPreview" role="status"></p><button type="button" id="backupCheck" disabled style="background:#1769aa;color:white">Vérifier sans restaurer</button><div id="backupCheckResult" role="status" class="panel" hidden style="margin-top:12px;background:#f0f7ff"></div><p class="hint">Le contrôle compare le fichier et les données de ce navigateur sans rien modifier.</p><button type="button" id="backupImport" disabled>Restaurer les données</button><p class="hint">Après restauration, l'application se recharge automatiquement. Les fichiers de sauvegarde contiennent potentiellement des données personnelles : ne les partage pas publiquement.</p><p id="backupImportStatus" role="status"></p></div></section></main><div id="shiftModal" hidden style="position:fixed;inset:0;background:#0008;z-index:99;overflow:auto;padding:15px"><div class="panel" style="max-width:540px;margin:25px auto;padding:22px"><div class="row" style="justify-content:space-between"><h2>Fiche intervention</h2><button type="button" onclick="closeShift()" aria-label="Fermer">✕</button></div><form id="editshift" style="display:grid;grid-template-columns:1fr 1fr"><label style="grid-column:1/-1">Client<select name="client" required></select></label><label style="grid-column:1/-1">Intervenante<select name="worker" required></select></label><label>Date<input type="date" name="date" required></label><label>Début<input type="time" name="start" required></label><label>Durée (h)<input type="number" name="hours" min="0.5" step="0.5" required></label><label>Type<select name="type"><option>Ménage</option><option>Vitres</option><option>Airbnb</option></select></label><label style="grid-column:1/-1">Statut<select name="status"><option>Confirmée</option><option>Terminée</option><option>Annulée</option><option>Absence client</option><option>Absence intervenante</option><option>Absence</option></select></label><div id="absenceFields" style="grid-column:1/-1;display:none"><label>Motif de l’absence<select name="absenceReason"><option value="">Choisir un motif</option><option>Client indisponible</option><option>Client absent au rendez-vous</option><option>Intervenante malade</option><option>Intervenante indisponible</option><option>Autre</option></select></label><label style="display:grid;margin-top:12px">Commentaire (facultatif)<textarea name="absenceComment" rows="3" style="padding:10px;border:1px solid #cbd5e1;border-radius:8px;font:inherit;width:100%"></textarea></label><p class="hint"><strong>Absence : 0 € facturé.</strong> Les heures prévues restent visibles au planning, mais ne comptent pas comme réalisées.</p></div><label style="grid-column:1/-1" id="seriesScopeWrap" hidden>Appliquer les modifications à<select id="seriesScope"><option value="one">Cette intervention uniquement</option><option value="future">Cette intervention et les suivantes de la série</option><option value="all">Toute la série</option></select></label><p id="seriesNotice" class="hint" style="grid-column:1/-1"></p><button class="primary" type="submit" style="grid-column:1/-1">Enregistrer les modifications</button><button type="button" onclick="closeShift()" style="grid-column:1/-1">Fermer sans modifier</button></form></div></div><div id="quickModal" hidden role="dialog" aria-modal="true" aria-label="Nouvelle intervention"><div class="quick-window"><button type="button" id="closeQuick" aria-label="Fermer la fenêtre" style="float:right;margin-bottom:10px">✕ Fermer</button><div id="quickSlot"></div></div></div><script>
+let clients=[{id:1,name:'Mme Martin (fictif)',cat:'SAP',home:'Domicile',rate:34},{id:2,name:'Conciergerie Soleil (fictif)',cat:'PRO',home:'T2 Lavande',rate:45},{id:3,name:'Bureaux Azur (fictif)',cat:'PRO',home:'Bureaux',rate:30},{id:4,name:'M. Bernard (fictif)',cat:'SAP',home:'Domicile',rate:32}];try{const saved=JSON.parse(localStorage.getItem('domeo_clients_v1'));if(Array.isArray(saved)&&saved.length)clients=saved;}catch(e){}const workers=[{id:1,name:'Emma (fictive)',color:'#3878c6'},{id:2,name:'Lina (fictive)',color:'#a25ac0'},{id:3,name:'Sarah (fictive)',color:'#159a85'}];let today=new Date(),offset=0;const storageKey='domeo-v19-shifts';const iso=d=>[d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');let monday=new Date(today);monday.setDate(today.getDate()-(today.getDay()+6)%7);const plus=(d,n)=>{let a=new Date(d);a.setDate(a.getDate()+n);return a};let shifts=[{client:1,worker:1,date:iso(plus(monday,0)),start:'09:00',hours:3,type:'Ménage',status:'Terminée'},{client:2,worker:2,date:iso(plus(monday,1)),start:'11:00',hours:2,type:'Airbnb',status:'Confirmée'},{client:3,worker:3,date:iso(plus(monday,2)),start:'08:30',hours:4,type:'Ménage',status:'Terminée'},{client:4,worker:1,date:iso(plus(monday,4)),start:'14:00',hours:2,type:'Vitres',status:'Absence'}];try{const saved=JSON.parse(localStorage.getItem(storageKey)||'null');if(Array.isArray(saved))shifts=saved;}catch(err){console.warn('Stockage indisponible',err)}const saveShifts=()=>{try{localStorage.setItem(storageKey,JSON.stringify(shifts))}catch(err){console.warn('Sauvegarde indisponible',err)}};let requests=[{home:'T2 Lavande',date:iso(plus(monday,5)),details:'Ménage, changement des draps, départ 10 h / arrivée 16 h',status:'À traiter'}];const money=n=>n.toLocaleString('fr-FR',{style:'currency',currency:'EUR'});const find=(arr,id)=>arr.find(x=>x.id==id);const statusColor={'Absence client':'#d43c3c','Absence intervenante':'#d43c3c','Annulée':'#888888',Terminée:'#239d62',Confirmée:'#3878c6',Absence:'#d43c3c','À traiter':'#e18b1c'};function cards(id,arr){document.getElementById(id).innerHTML=arr.map(x=>`<div class="card"><span class="muted">${x[0]}</span><div class="number">${x[1]}</div></div>`).join('')}function render(){let done=shifts.filter(s=>s.status==='Terminée');cards('stats',[['Clients',clients.length],['Intervenantes',workers.length],['Heures terminées',done.reduce((a,s)=>a+Number(s.actualHours??s.hours),0)+' h'],['Prestations réalisées',money(done.reduce((a,s)=>a+Number(s.actualHours??s.hours)*(find(clients,s.client)?.rate||0),0))]]);document.getElementById('todo').textContent=`${requests.filter(x=>x.status==='À traiter').length} demande(s) Airbnb à traiter · ${shifts.filter(x=>String(x.status||'').startsWith('Absence')).length} absence(s) signalée(s)`;document.getElementById('workers').innerHTML=workers.map(w=>`<div class="card"><span class="dot" style="background:${w.color}"></span><b>${w.name}</b></div>`).join('');document.getElementById('shiftClient').innerHTML=clients.map(c=>`<option value="${c.id}">${c.name}</option>`).join('');document.getElementById('shiftWorker').innerHTML=workers.map(w=>`<option value="${w.id}">${w.name}</option>`).join('');renderCalendar();renderHours();renderRequests()}function renderCalendar(){let start=plus(monday,offset*7);document.getElementById('week').textContent=`Du ${start.toLocaleDateString('fr-FR')} au ${plus(start,6).toLocaleDateString('fr-FR')}`;let mode=document.getElementById('color').value;document.getElementById('calendar').innerHTML=Array.from({length:7},(_,i)=>{let d=plus(start,i),ds=iso(d);return `<div class="day" role="button" tabindex="0" aria-label="Ajouter une intervention le ${ds}" onclick="quickAdd('${ds}')" onkeydown="if(event.target===this&&(event.key==='Enter'||event.key===' ')){event.preventDefault();quickAdd('${ds}')}" ><b>${d.toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'short'})}</b>${shifts.filter(s=>s.date===ds).map(s=>{let shiftIndex=shifts.indexOf(s);let c=find(clients,s.client)||{id:0,name:'Client introuvable'},w=find(workers,s.worker)||{name:'Intervenante introuvable',color:'#888888'},clr=mode==='worker'?w.color:mode==='client'?(['#3176a8','#b85f78','#9b7b22','#32957d'][c.id-1]||'#888888'):mode==='type'?({'Ménage':'#5689bb','Vitres':'#8b65b9','Airbnb':'#d3892c'}[s.type]):'#aab2bd';return `<div class="shift" role="button" tabindex="0" onclick="event.stopPropagation();openShift(${shiftIndex})" onkeydown="if(event.key==='Enter'){event.stopPropagation();openShift(${shiftIndex})}" style="border-color:${clr};cursor:pointer"><span class="dot" style="background:${statusColor[s.status]}"></span><b>${s.start} · ${s.hours} h</b><div>${c.name}</div><div>${w.name}</div><small>${s.status}</small>${String(s.status||'').startsWith('Absence')?`<div style="color:#a32d2d;font-weight:700">0 € facturé</div>${s.absenceReason?`<small>${s.absenceReason.replace(/</g,'&lt;')}</small>`:''}`:''}</div>`}).join('')}<span class="add-hint">+ Ajouter une intervention</span></div>`}).join('')}function quickAdd(date){
  const form=document.getElementById('newshift');
  form.elements.namedItem('date').value=date;
  document.getElementById('repeatMode').value='none';document.getElementById('repeatMode').onchange();
@@ -257,74 +255,604 @@ $('cbInvoice').addEventListener('input',()=>{$('cbNotice').textContent=''});
 $('cbPayment').elements.namedItem('date').value=new Date().toLocaleDateString('en-CA');
 refresh();
 })();
-</script><style>
-#clientportal .card,#settings33 .card{box-shadow:none;border:1px solid #e2e8f0} .v33box{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}.v33box label{display:grid;gap:5px} .v33box input,.v33box select,.v33box textarea{width:100%} .v33note{background:#eff6ff;border-radius:9px;padding:12px;color:#25456b} .v33pill{display:inline-block;background:#e9f3ff;padding:5px 9px;border-radius:8px}
-</style>
-<script>
-// V3.3 : ajouts compatibles avec les anciennes données sauvegardées.
+</script><script>
 (function(){
-const E=id=>document.getElementById(id),esc33=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const fr33=v=>/^\d{4}-\d{2}-\d{2}$/.test(v||'')?v.slice(8,10)+'/'+v.slice(5,7)+'/'+v.slice(0,4):'—';
-const end33=s=>{let a=String(s.start||'09:00').split(':').map(Number);let n=(a[0]*60+a[1]+Math.round(Number(s.hours||0)*60))%1440;return String(Math.floor(n/60)).padStart(2,'0')+'h'+String(n%60).padStart(2,'0')};
-const typesKey='domeo-v33-types';let types33=[];try{types33=JSON.parse(localStorage.getItem(typesKey)||'[]')}catch(e){}if(!Array.isArray(types33)||!types33.length)types33=[...new Set(shifts.map(x=>x.type).filter(Boolean))];
-function refreshTypes33(){const opts=types33.map(t=>'<option value="'+esc33(t)+'">'+esc33(t)+'</option>').join('');const sel=E('shiftType33');const old=sel.value;sel.innerHTML=opts;if(types33.includes(old))sel.value=old;E('typesList33').innerHTML=types33.map((t,i)=>'<div class="row"><span class="v33pill">'+esc33(t)+'</span> <button type="button" data-deltype="'+i+'">Supprimer de la liste</button></div>').join('');E('typesList33').querySelectorAll('[data-deltype]').forEach(b=>b.onclick=()=>{if(types33.length===1)return alert('Conserve au moins un type.');types33.splice(Number(b.dataset.deltype),1);localStorage.setItem(typesKey,JSON.stringify(types33));refreshTypes33()})}
-E('addType33').onsubmit=e=>{e.preventDefault();const v=e.target.elements.type.value.trim();if(v&&!types33.includes(v)){types33.push(v);localStorage.setItem(typesKey,JSON.stringify(types33))}e.target.reset();refreshTypes33()};refreshTypes33();
-// Conserver l'ancien fonctionnement du formulaire équipe et y ajouter les champs métier.
-const oldEdit=window.workerEdit;window.workerEdit=function(id){oldEdit(id);const w=workers.find(x=>x.id===id)||{};const f=E('workerForm').elements;f.kind.value=w.kind||'independent';f.siret.value=w.siret||'';f.contract.value=w.contract||'CDI';toggleKind33()};
-function toggleKind33(){const employee=E('workerKind').value==='employee';E('siretWrap').hidden=employee;E('contractWrap').hidden=!employee}E('workerKind').onchange=toggleKind33;
-const wf=E('workerForm');wf.addEventListener('submit',e=>{const f=wf.elements;const siret=f.siret.value.replace(/\s/g,'');if(f.kind.value==='independent'&&siret&&!/^\d{14}$/.test(siret)){e.preventDefault();e.stopImmediatePropagation();alert('Le SIRET doit contenir 14 chiffres, ou rester vide.');return}const id=editingWorker;const oldIds=new Set(workers.map(w=>w.id));setTimeout(()=>{const w=id===null?workers.find(x=>!oldIds.has(x.id)):workers.find(x=>x.id===id);if(!w)return;w.kind=f.kind.value;w.siret=siret;w.contract=f.kind.value==='employee'?f.contract.value:'';saveWorkers();renderWorkerCards33()},0)},true);
-function renderWorkerCards33(){const root=E('workers');root.innerHTML=workers.map(w=>'<div class="card"><span class="dot" style="background:'+esc33(w.color)+'"></span><b>'+esc33(w.name)+'</b><p>'+ (w.kind==='employee'?'Employé · '+esc33(w.contract||'CDI'):'Indépendant · SIRET : '+esc33(w.siret||'non renseigné'))+'</p><p>'+esc33(w.phone||'')+' '+esc33(w.email||'')+'</p><button onclick="workerEdit('+Number(w.id)+')">Modifier</button> <button onclick="deleteWorker('+Number(w.id)+')">Supprimer</button></div>').join('')}
-const originalRender=window.render;window.render=function(){originalRender();renderWorkerCards33();renderPortal33();renderCA33()};renderWorkerCards33();
-// Affichage d'une heure de fin calculée d'après début + durée dans les fiches client.
-function renderPortal33(){const sel=E('portalClient33');const id=sel.value;sel.innerHTML=clients.map(c=>'<option value="'+c.id+'">'+esc33(c.name)+'</option>').join('');if(clients.some(c=>String(c.id)===id))sel.value=id;const cid=Number(sel.value);const relevant=shifts.filter(s=>Number(s.client)===cid).sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,30);let comments={};try{comments=JSON.parse(localStorage.getItem('domeo-v33-client-comments')||'{}')}catch(e){}E('portalShifts33').innerHTML=relevant.map(s=>{const idx=shifts.indexOf(s),k=String(idx)+'_'+s.date+'_'+s.client;return '<div class="card"><h3>'+fr33(s.date)+'</h3><p><b>'+esc33(workers.find(w=>w.id===s.worker)?.name||'Non affecté')+'</b> — '+esc33(s.type)+'</p><p>Horaire prévu : '+esc33(s.start)+' – '+end33(s)+'</p><p>Arrivée réelle : non renseignée · Départ réel : non renseigné</p><label>Consignes pour cette intervention<textarea data-comment="'+esc33(k)+'" rows="3" style="width:100%;padding:9px">'+esc33(comments[k]||'')+'</textarea></label><p><button data-savecomment="'+esc33(k)+'">Enregistrer la consigne (démo)</button></p></div>'}).join('')||'<p>Aucune intervention pour ce client.</p>';E('portalShifts33').querySelectorAll('[data-savecomment]').forEach(b=>b.onclick=()=>{const k=b.dataset.savecomment;comments[k]=E('portalShifts33').querySelector('[data-comment="'+k+'"]').value;localStorage.setItem('domeo-v33-client-comments',JSON.stringify(comments));alert('Consigne enregistrée sur cet appareil uniquement. Une demande supplémentaire reste soumise à la responsable.')})}
-E('portalClient33').onchange=renderPortal33;renderPortal33();
-function renderCA33(){const month=E('caMonth33').value;E('caRows33').innerHTML=clients.map(c=>{const h=shifts.filter(s=>s.client===c.id&&s.status==='Terminée'&&s.date.startsWith(month)).reduce((n,s)=>n+Number(s.hours||0),0);return {c,h}}).filter(x=>x.h).map(x=>'<tr><td>'+esc33(x.c.name)+'</td><td>'+x.h.toFixed(2)+' h</td><td>'+(x.h*Number(x.c.rate||0)).toLocaleString('fr-FR',{style:'currency',currency:'EUR'})+'</td></tr>').join('')||'<tr><td colspan="3">Aucune prestation terminée sur ce mois.</td></tr>'}E('caMonth33').value=new Date().getFullYear()+'-'+String(new Date().getMonth()+1).padStart(2,'0');E('caMonth33').onchange=renderCA33;renderCA33();
-// Rendre visibles les nouvelles sections via la navigation existante.
+'use strict';
+const keys=['domeo_clients_v1','domeo_workers_v1','domeo-v19-shifts','domeo-v24-independent-payments','domeo_v26_client_invoices','domeo_v29_reminder_history','domeo_v31_reminder_events'];
+const $=id=>document.getElementById(id);
+let candidate=null;
+const status=(id,msg)=>{$(id).textContent=msg};
+function makeBackup(){
+ const data={};for(const k of keys){const raw=localStorage.getItem(k);if(raw!==null)data[k]=JSON.parse(raw)}
+ return {format:'domeo-services-pro-backup',version:1,createdAt:new Date().toISOString(),data};
+}
+function downloadJSON(obj,name){
+ const blob=new Blob([JSON.stringify(obj,null,2)],{type:'application/json;charset=utf-8'});
+ const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);
+}
+$('backupExport').addEventListener('click',()=>{
+ try{const b=makeBackup();if(!Object.keys(b.data).length){status('backupExportStatus','Aucune donnée enregistrée à sauvegarder.');return}
+ const date=new Date().toISOString().slice(0,10);downloadJSON(b,'Domeo_sauvegarde_'+date+'.json');status('backupExportStatus','Sauvegarde préparée. Vérifie le téléchargement dans tes fichiers.');}
+ catch(e){status('backupExportStatus','Échec de la sauvegarde : stockage indisponible ou données illisibles.');}
+});
+function validate(b){
+ if(!b||b.format!=='domeo-services-pro-backup'||b.version!==1||!b.data||typeof b.data!=='object'||Array.isArray(b.data))throw Error('Ce fichier n’est pas une sauvegarde Doméo compatible.');
+ const present=Object.keys(b.data);if(!present.length||present.some(k=>!keys.includes(k)))throw Error('Clés de sauvegarde non reconnues.');
+ const arrays=['domeo_clients_v1','domeo_workers_v1','domeo-v19-shifts','domeo_v31_reminder_events'];
+ for(const k of arrays)if(k in b.data&&!Array.isArray(b.data[k]))throw Error('Structure incorrecte : '+k);
+ const pay=b.data['domeo-v24-independent-payments'];if(pay!==undefined&&(!pay||typeof pay!=='object'||Array.isArray(pay)||!Array.isArray(pay.invoices)||!Array.isArray(pay.payments)||!pay.rates||typeof pay.rates!=='object'))throw Error('Données de paiements invalides.');
+ const inv=b.data['domeo_v26_client_invoices'];if(inv!==undefined&&(!inv||!Array.isArray(inv.invoices)||!Array.isArray(inv.payments)))throw Error('Données de facturation invalides.');
+ const rem=b.data['domeo_v29_reminder_history'];if(rem!==undefined&&(!rem||typeof rem!=='object'||Array.isArray(rem)))throw Error('Historique de relances invalide.');
+ for(const k of present)if(JSON.stringify(b.data[k]).length>3500000)throw Error('Section trop volumineuse : '+k);
+ return b;
+}
+$('backupFile').addEventListener('change',async e=>{
+ candidate=null;$('backupImport').disabled=true;$('backupCheck').disabled=true;$('backupCheckResult').hidden=true;status('backupImportStatus','');const f=e.target.files?.[0];if(!f){status('backupPreview','');return}
+ if(f.size>12000000){status('backupPreview','Fichier trop volumineux (12 Mo maximum).');return}
+ try{const b=validate(JSON.parse(await f.text()));candidate=b;const d=b.data;
+ const n=k=>Array.isArray(d[k])?d[k].length:0;
+ status('backupPreview',`Sauvegarde du ${b.createdAt?new Date(b.createdAt).toLocaleString('fr-FR'):'date inconnue'} · ${n('domeo_clients_v1')} clients · ${n('domeo_workers_v1')} intervenantes · ${n('domeo-v19-shifts')} interventions · ${d['domeo_v26_client_invoices']?.invoices?.length||0} factures clients. Sections enregistrées : ${Object.keys(d).length}/${keys.length}. ${keys.filter(k=>!(k in d)).length?'Sections absentes (non enregistrées) : '+keys.filter(k=>!(k in d)).map(k=>({'domeo_clients_v1':'Clients','domeo_workers_v1':'Intervenantes','domeo-v19-shifts':'Planning','domeo-v24-independent-payments':'Paiements indépendantes','domeo_v26_client_invoices':'Factures clients','domeo_v29_reminder_history':'Ancien historique de relances','domeo_v31_reminder_events':'Historique récent des relances'}[k]||k)).join(', ')+'. Elles ne seront pas effacées lors de la restauration.':'Toutes les sections sont présentes.'}`);
+ $('backupImport').disabled=false;$('backupCheck').disabled=false;
+ }catch(err){status('backupPreview','Impossible de lire ce fichier : '+err.message)}
+});
+$('backupCheck').addEventListener('click',()=>{
+ if(!candidate)return;
+ const labels={'domeo_clients_v1':'Clients','domeo_workers_v1':'Intervenantes','domeo-v19-shifts':'Interventions','domeo-v24-independent-payments':'Factures des indépendantes','domeo_v26_client_invoices':'Factures clients','domeo_v29_reminder_history':'Anciennes relances','domeo_v31_reminder_events':'Relances récentes'};
+ const count=(key,obj)=>{if(obj===null||obj===undefined)return 'non enregistrée';if(Array.isArray(obj))return obj.length+' élément(s)';if(key==='domeo-v24-independent-payments')return (obj.invoices?.length||0)+' facture(s), '+(obj.payments?.length||0)+' règlement(s)';if(key==='domeo_v26_client_invoices')return (obj.invoices?.length||0)+' facture(s), '+(obj.payments?.length||0)+' règlement(s)';return Object.keys(obj).length+' entrée(s)'};
+ const box=$('backupCheckResult');box.replaceChildren();
+ const heading=document.createElement('h4');heading.textContent='Contrôle sans modification';box.appendChild(heading);
+ const table=document.createElement('div');table.className='scroll';const t=document.createElement('table');
+ const head=document.createElement('tr');for(const h of ['Section','Actuellement','Dans le fichier','Action si restauration']){const th=document.createElement('th');th.textContent=h;head.appendChild(th)}t.appendChild(head);
+ for(const k of keys){let current=null;try{const raw=localStorage.getItem(k);if(raw!==null)current=JSON.parse(raw)}catch(e){current='illisible'}
+ const exists=Object.prototype.hasOwnProperty.call(candidate.data,k);const incoming=exists?candidate.data[k]:null;
+ const tr=document.createElement('tr');for(const value of [labels[k],count(k,current),count(k,incoming),exists?'Remplacée':'Conservée']){const td=document.createElement('td');td.textContent=value;tr.appendChild(td)}t.appendChild(tr)}
+ table.appendChild(t);box.appendChild(table);const note=document.createElement('p');note.className='hint';note.textContent='Vérification terminée : aucune donnée n’a été modifiée. La restauration reste facultative.';box.appendChild(note);box.hidden=false;box.scrollIntoView({behavior:'smooth',block:'nearest'});
+});
+$('backupImport').addEventListener('click',()=>{
+ if(!candidate)return;
+ if(!confirm('ATTENTION : restaurer les sections présentes dans ce fichier ?\n\nLes sections absentes seront conservées sur cet appareil. Les sections présentes remplaceront les données actuelles correspondantes.\n\nTélécharge d’abord une sauvegarde de la situation actuelle.'))return;
+ try{
+  const previous={};for(const k of keys)previous[k]=localStorage.getItem(k);
+  try{for(const k of keys){if(Object.prototype.hasOwnProperty.call(candidate.data,k))localStorage.setItem(k,JSON.stringify(candidate.data[k]));}}
+  catch(err){for(const k of keys){try{if(previous[k]===null)localStorage.removeItem(k);else localStorage.setItem(k,previous[k])}catch(_){}}throw err}
+  status('backupImportStatus','Restauration effectuée. Rechargement…');location.reload();
+ }catch(e){status('backupImportStatus','Restauration impossible. Vérifie l’espace de stockage du navigateur.');}
+});
 })();
 </script><script>
-// V3.4 : pointage local d'essai, sans serveur ni partage des positions.
 (function(){
-const el=id=>document.getElementById(id);
-const safe=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const key='domeo-v34-gps-demo';
-const shiftKey=(s,i)=>String(s.id??('mission-'+i+'-'+s.date+'-'+s.client+'-'+s.worker+'-'+s.start));
-let records={};try{records=JSON.parse(localStorage.getItem(key)||'{}')||{}}catch(e){}
-const datefr=d=>{const x=String(d||'');return /^\d{4}-\d\d-\d\d$/.test(x)?x.slice(8)+'/'+x.slice(5,7)+'/'+x.slice(0,4):x};
-function fill(){
- const sel=el('gpsShift');if(!sel)return;
- const prior=sel.value;
- const ss=typeof shifts!=='undefined'?shifts:[];
- sel.innerHTML=ss.map((s,i)=>({...s,_gpsKey:shiftKey(s,i)})).sort((a,b)=>String(b.date).localeCompare(String(a.date))).map(s=>'<option value="'+safe(s._gpsKey)+'">'+safe(datefr(s.date))+' · '+safe((workers.find(w=>w.id===s.worker)||{}).name||'Personnel')+' · '+safe((clients.find(c=>c.id===s.client)||{}).name||'Client')+'</option>').join('');
- if([...sel.options].some(o=>o.value===prior))sel.value=prior;
- show();
+const $=id=>document.getElementById(id);
+const clean=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const euro=n=>Number(n||0).toLocaleString('fr-FR',{style:'currency',currency:'EUR'});
+const localDay=()=>{const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};
+$('dashDate').value=localDay();
+function draw(){
+ const day=$('dashDate').value||localDay();
+ const list=shifts.filter(s=>s.date===day).sort((a,b)=>String(a.start).localeCompare(String(b.start)));
+ let billing={invoices:[],payments:[]};try{const v=JSON.parse(localStorage.getItem('domeo_v26_client_invoices')||'null');if(v&&Array.isArray(v.invoices)&&Array.isArray(v.payments))billing=v}catch(e){}
+ const paid=i=>billing.payments.filter(p=>String(p.invoiceId)===String(i.id)).reduce((sum,p)=>sum+Number(p.amount||0),0);
+ const pending=billing.invoices.map(i=>({...i,remaining:Math.max(0,Number(i.amount||0)-paid(i))})).filter(i=>i.remaining>.005);
+ const late=pending.filter(i=>i.due&&i.due<day);
+ const metrics=[['Interventions du jour',list.length],['Heures prévues',list.reduce((n,s)=>n+Number(s.hours||0),0)+' h'],['Heures terminées',list.filter(s=>s.status==='Terminée').reduce((n,s)=>n+Number(s.hours||0),0)+' h'],['À encaisser (toutes dates)',euro(pending.reduce((n,i)=>n+i.remaining,0))],['Factures en retard',late.length],['Montant en retard',euro(late.reduce((n,i)=>n+i.remaining,0))]];
+ $('dashCards').innerHTML=metrics.map(([label,value])=>'<div class="card"><span class="muted">'+clean(label)+'</span><div class="number">'+clean(value)+'</div></div>').join('');
+ $('dashShifts').innerHTML=list.map(s=>{const c=clients.find(c=>String(c.id)===String(s.client));const w=workers.find(w=>String(w.id)===String(s.worker));return '<button type="button" class="card dash-link" data-shift-index="'+shifts.indexOf(s)+'"><b>'+clean(s.start)+' · '+clean(s.hours)+' h</b> — '+clean(c?.name||'Client inconnu')+'<p>'+clean(w?.name||'Intervenante inconnue')+' · '+clean(s.type)+' · <b>'+clean(s.status)+'</b></p><span class="hint">Ouvrir la fiche →</span></button>'}).join('')||'<p class="hint">Aucune intervention prévue pour cette journée.</p>';
+ $('dashInvoices').innerHTML=late.slice(0,10).map(i=>{const c=clients.find(c=>String(c.id)===String(i.client));return '<div class="card" style="margin-bottom:12px"><b>'+clean(i.number)+'</b> · '+clean(i.customerSnapshot?.name||c?.name||'Client inconnu')+'<p>Échéance : '+clean(i.due)+' · Reste : <b>'+euro(i.remaining)+'</b></p><div class="row"><button type="button" data-invoice-id="'+clean(i.id)+'">Consulter la facture</button><button type="button" class="primary" data-dash-reminder="'+clean(i.id)+'">Préparer la relance</button></div></div>'}).join('')||'<p class="hint">Aucune facture en retard à la date sélectionnée.</p>';
 }
-function show(){
- const s=(typeof shifts!=='undefined'?shifts:[]).find((s,i)=>shiftKey(s,i)===el('gpsShift').value);
- if(!s){el('gpsMission').textContent='Aucune intervention disponible : crée une mission dans le planning.';el('gpsHistory').innerHTML='';return;}
- const c=clients.find(c=>c.id===s.client)||{}, w=workers.find(w=>w.id===s.worker)||{};
- el('gpsMission').textContent=`${w.name||'Personnel'} chez ${c.name||'client'} · ${datefr(s.date)} · ${s.start||'—'} · durée prévue ${s.hours||0} h. Adresse : ${c.address||'non renseignée'}.`;
- const r=records[el('gpsShift').value]||{};
- el('gpsHistory').innerHTML=['arrival','departure'].map(k=>{const v=r[k];return '<div class="card"><b>'+(k==='arrival'?'Arrivée':'Départ')+'</b> : '+(v?'<p>'+safe(new Date(v.at).toLocaleString('fr-FR'))+'</p><p>Latitude : '+safe(v.lat)+' · Longitude : '+safe(v.lon)+'</p><p>Précision GPS estimée : '+safe(Math.round(v.accuracy))+' m</p>':'Non pointé')+'</div>'}).join('');
-}
-function diagnostic(){const d=el('gpsDiagnostic');const secure=window.isSecureContext===true;const available=!!navigator.geolocation;d.textContent=(secure?'Connexion sécurisée : oui. ':'Connexion sécurisée : non (fichier local ou page non HTTPS). ')+(available?'GPS disponible dans le navigateur.':'API GPS indisponible.')+(!secure?' Le navigateur peut refuser le pointage avant même de demander une autorisation.':' Appuyez sur Pointer mon arrivée pour demander la position.');}
-function stamp(kind){
- const id=el('gpsShift').value;if(!id)return;
- const notice=el('gpsNotice');
- if(!window.isSecureContext){notice.textContent='GPS bloqué : cette page HTML est ouverte hors connexion HTTPS sécurisée. Le bouton fonctionne, mais Chrome interdit l’accès à la position. Il faudra héberger la démo en HTTPS.';return;}
- if(!navigator.geolocation){notice.textContent='Le bouton fonctionne, mais la géolocalisation est indisponible dans ce navigateur.';return;}
- notice.textContent='Demande de localisation au téléphone…';
- navigator.geolocation.getCurrentPosition(pos=>{
-  const rec=records[id]||{};
-  rec[kind]={at:new Date().toISOString(),lat:Number(pos.coords.latitude.toFixed(6)),lon:Number(pos.coords.longitude.toFixed(6)),accuracy:pos.coords.accuracy};
-  records[id]=rec;try{localStorage.setItem(key,JSON.stringify(records));notice.textContent='Pointage enregistré sur ce téléphone uniquement. Position non partagée.';show();}catch(e){notice.textContent='Position obtenue mais enregistrement local bloqué par Chrome.';}
- },err=>{notice.textContent='Position non enregistrée : '+(err.code===1?'autorisation refusée ou contexte non sécurisé.':err.code===2?'signal GPS indisponible.':'délai dépassé.')+' Le pointage n’a pas été enregistré.';},{enableHighAccuracy:true,timeout:15000,maximumAge:0});
-}
-el('gpsShift').addEventListener('change',show);
-el('gpsCheck').addEventListener('click',diagnostic);
-diagnostic();
-el('gpsArrive').addEventListener('click',()=>stamp('arrival'));
-el('gpsLeave').addEventListener('click',()=>stamp('departure'));
-fill();
-const nav=document.getElementById('nav');nav.addEventListener('click',e=>{if(e.target.closest('[data-page="clockgps"]'))fill()});
+function navigate(page){const button=document.querySelector('nav button[data-page="'+page+'"]');if(button)button.click();}
+$('dashShifts').addEventListener('click',e=>{const b=e.target.closest('[data-shift-index]');if(!b)return;const index=Number(b.dataset.shiftIndex);if(!shifts[index])return;navigate('planning');openShift(index);});
+$('dashInvoices').addEventListener('click',e=>{const b=e.target.closest('[data-invoice-id]');if(!b)return;const id=b.dataset.invoiceId;navigate('clientbilling');const detail=[...document.querySelectorAll('#cbList [data-detail]')].find(x=>x.dataset.detail===id);if(detail)detail.click();else document.getElementById('cbList').scrollIntoView({behavior:'smooth'});});
+$('dashInvoices').addEventListener('click',e=>{
+ const button=e.target.closest('[data-dash-reminder]');if(!button)return;
+ const id=button.dataset.dashReminder;
+ navigate('clientbilling');
+ const prepare=[...document.querySelectorAll('#lateInvoices [data-reminder-prepare]')].find(b=>b.dataset.reminderPrepare===id);
+ if(prepare){prepare.click();const draft=document.getElementById('reminderDraft');if(draft&&!draft.hidden)draft.scrollIntoView({behavior:'smooth',block:'start'});}
+ else{const notice=document.getElementById('lateNotice');if(notice)notice.textContent='Cette facture ne figure pas dans les relances en retard à la date du jour. Aucun message préparé.';document.getElementById('lateInvoices').scrollIntoView({behavior:'smooth',block:'start'});}
+});
+$('dashDate').addEventListener('change',draw);$('dashToday').addEventListener('click',()=>{$('dashDate').value=localDay();draw()});$('dashRefresh').addEventListener('click',draw);
+const oldRender=render;render=function(){oldRender();draw()};
+document.querySelector('button[data-page="dashboard"]').addEventListener('click',draw);
+draw();
 })();
-</script></body></html>
+</script><script id="v39script">
+(function(){
+'use strict';
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const validPhone=v=>String(v||'').replace(/[^+\d]/g,'');
+const gpsLink=c=>c&&String(c.address||'').trim()?'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(c.address.trim()):'';
+const callLink=c=>{const p=validPhone(c?.phone);return p.length>=6?'tel:'+p:''};
+function actions(c){const gps=gpsLink(c),phone=callLink(c);return '<div class="v39-actions">'+(gps?'<a href="'+esc(gps)+'" target="_blank" rel="noopener noreferrer">📍 GPS / Itinéraire</a>':'<span class="disabled">📍 Adresse manquante</span>')+(phone?'<a class="call" href="'+esc(phone)+'">📞 Appeler</a>':'<span class="disabled">📞 Téléphone manquant</span>')+'</div>'}
+const fmt=v=>Number(v||0).toLocaleString('fr-FR',{style:'currency',currency:'EUR'});
+function billing(){try{const x=JSON.parse(localStorage.getItem('domeo_v26_client_invoices')||'null');return x&&Array.isArray(x.invoices)&&Array.isArray(x.payments)?x:{invoices:[],payments:[]}}catch(e){return {invoices:[],payments:[]}}}
+function details(c){const history=shifts.filter(s=>String(s.client)===String(c.id)).sort((a,b)=>String(b.date).localeCompare(String(a.date)));const b=billing(),invoices=b.invoices.filter(i=>String(i.client)===String(c.id));const paid=i=>b.payments.filter(p=>String(p.invoiceId)===String(i.id)).reduce((n,p)=>n+Number(p.amount||0),0);return '<details class="v39-details"><summary>Historique, factures et règlements</summary><p><b>Interventions ('+history.length+')</b></p>'+(history.slice(0,30).map(s=>'<p>'+esc(s.date)+' · '+esc(s.start)+' · '+esc(s.hours)+' h · '+esc(s.type)+' · '+esc(s.status)+'</p>').join('')||'<p>Aucune intervention.</p>')+'<p><b>Factures NeedMe ('+invoices.length+')</b></p>'+(invoices.map(i=>'<p>'+esc(i.number)+' · '+fmt(i.amount)+' · Réglé '+fmt(paid(i))+' · Reste '+fmt(Math.max(0,Number(i.amount||0)-paid(i)))+'</p>').join('')||'<p>Aucune facture.</p>')+'<p class="hint">Pour préparer une relance, ouvre « Suivi factures clients ».</p></details>'}
+const originalCards=renderClientCards;
+renderClientCards=function(){originalCards();const container=document.getElementById('clientcards');const cards=container.querySelectorAll(':scope > .card');clients.forEach((c,i)=>{if(cards[i])cards[i].insertAdjacentHTML('beforeend',actions(c)+details(c))})};
+const form=document.getElementById('editshift');const box=document.createElement('div');box.id='v39ShiftActions';box.style.gridColumn='1/-1';form.insertBefore(box,form.firstChild);const originalOpen=openShift;openShift=function(index){originalOpen(index);const s=shifts[index],c=clients.find(c=>String(c.id)===String(s?.client));box.innerHTML='<b>Contacter / rejoindre la cliente</b>'+(c?actions(c):'<p>Client introuvable</p>')};
+const modeKey='domeo_v39_mode';let mode='pro';try{mode=localStorage.getItem(modeKey)==='solo'?'solo':'pro'}catch(e){}
+const selector=document.createElement('div');selector.className='v39-mode';selector.innerHTML='<label for="v39Mode"><b>Mode de travail</b></label><select id="v39Mode"><option value="solo">Doméo Solo — Je travaille seule</option><option value="pro">Doméo Pro — Je gère une équipe</option></select><span class="hint">Tu peux changer de mode à tout moment, sans supprimer les données.</span>';
+const main=document.querySelector('main');main.insertBefore(selector,main.firstChild);const select=document.getElementById('v39Mode');select.value=mode;
+function applyMode(){const solo=mode==='solo';document.body.classList.toggle('v39-solo',solo);const team=document.querySelector('button[data-page="team"]');const pay=document.querySelector('button[data-page="payments"]');if(solo&&(team?.classList.contains('active')||pay?.classList.contains('active')))document.querySelector('button[data-page="dashboard"]').click();selector.querySelector('.hint').textContent=solo?'Mode Solo : les outils de gestion d’équipe sont masqués, pas supprimés.':'Mode Pro : toutes les fonctions de gestion d’équipe sont visibles.'}
+select.addEventListener('change',()=>{mode=select.value;try{localStorage.setItem(modeKey,mode)}catch(e){}applyMode()});applyMode();renderClientCards();
+})();
+</script>
+<style id="v40style">
+.v40-head{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:15px}
+.v40-entry{border-left:5px solid #1769aa}
+.v40-entry h3{margin:0 0 8px}
+.v40-entry .v39-actions{margin-bottom:8px}
+.v40-status{font-size:13px;font-weight:650;color:#52657a}
+.v40-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:12px 0}
+.v40-summary .card{margin:0}
+@media(max-width:650px){.v40-head>*{width:100%}.v40-entry{padding:14px}}
+</style>
+<script id="v40script">
+(function(){
+'use strict';
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+const dateLocal=()=>{const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};
+const nav=document.getElementById('nav');
+const btn=document.createElement('button');
+btn.type='button';btn.dataset.page='myday';btn.textContent='☀ Ma journée';
+nav.insertBefore(btn,nav.firstChild);
+const main=document.querySelector('main');
+const section=document.createElement('section');
+section.id='myday';section.hidden=true;
+section.innerHTML='<h2>☀ Ma journée</h2><div class="panel"><div class="v40-head"><label>Choisir une journée <input id="v40Date" type="date"></label><button type="button" id="v40Today">Aujourd’hui</button><button type="button" id="v40Refresh">Actualiser</button></div><p class="hint" id="v40ModeHint"></p><div id="v40Summary" class="v40-summary"></div></div><div id="v40List"></div><p class="hint">Le bouton Terminer enregistre la prestation sur cet appareil uniquement. GPS et téléphone ouvrent les applications du téléphone.</p>';
+main.insertBefore(section,document.getElementById('dashboard'));
+const date=section.querySelector('#v40Date');
+date.value=dateLocal();
+const actions=c=>{
+ const addr=String(c?.address||'').trim();
+ const phone=String(c?.phone||'').replace(/[^+\d]/g,'');
+ return '<div class="v39-actions">'+(addr?'<a href="https://www.google.com/maps/dir/?api=1&amp;destination='+encodeURIComponent(addr)+'" target="_blank" rel="noopener noreferrer">📍 GPS / Itinéraire</a>':'<span class="disabled">📍 Adresse manquante</span>')+(phone.length>=6?'<a class="call" href="tel:'+esc(phone)+'">📞 Appeler</a>':'<span class="disabled">📞 Téléphone manquant</span>')+'</div>';
+};
+function v432Duration(v){const n=Number(v);if(!Number.isFinite(n))return String(v)+' h';const minutes=Math.round(n*60);const h=Math.floor(minutes/60),m=minutes%60;return m?`${h} h ${String(m).padStart(2,'0')}`:`${h} h`; }
+function draw(){
+ const day=date.value||dateLocal();
+ const solo=document.getElementById('v39Mode')?.value==='solo';
+ const items=shifts.map((s,index)=>({s,index})).filter(x=>x.s.date===day && (!window.domeoDemoWorkerId || String(x.s.worker)===String(window.domeoDemoWorkerId))).sort((a,b)=>String(a.s.start||'').localeCompare(String(b.s.start||'')));
+ const hours=items.filter(x=>!['Annulée','Absence','Absence client','Absence intervenante'].includes(x.s.status)).reduce((n,x)=>n+Number(x.s.hours||0),0);
+ const completed=items.filter(x=>x.s.status==='Terminée').length;
+ const doneHours=items.filter(x=>x.s.status==='Terminée').reduce((n,x)=>n+Number(x.s.actualHours??x.s.hours??0),0);
+ section.querySelector('#v40ModeHint').textContent=window.domeoDemoWorkerId?'Vue de démonstration intervenante : missions attribuées uniquement (sans sécurité réelle).':solo?'Mode Solo : tes rendez-vous et tes clientes du jour.':'Mode Pro : les interventions de toute l’équipe.';
+ section.querySelector('#v40Summary').innerHTML=[['Interventions',items.length],['Heures prévues',v432Duration(hours)],['Terminées',completed],['Heures réalisées',v432Duration(doneHours)]].map(x=>'<div class="card"><span class="muted">'+x[0]+'</span><div class="number">'+x[1]+'</div></div>').join('');
+ section.querySelector('#v40List').innerHTML=items.map(({s,index})=>{
+  const c=clients.find(x=>String(x.id)===String(s.client));
+  const w=workers.find(x=>String(x.id)===String(s.worker));
+  return '<article class="card v40-entry"><h3>'+esc(s.start)+' · '+v432Duration(s.hours)+' — '+esc(c?.name||'Client introuvable')+'</h3><p>'+esc(s.type||'Prestation')+' · <span class="v40-status">'+esc(s.status||'')+'</span></p>'+
+  (solo?'':'<p><b>Intervenante :</b> '+esc(w?.name||'Non renseignée')+'</p>')+
+  (s.status==='Terminée'?'<p><b>Réalisé :</b> '+v432Duration(s.actualHours??s.hours)+'</p>':'')+
+  (s.finishComment?'<p class="v43-note"><b>Compte rendu :</b> '+esc(s.finishComment)+'</p>':'')+
+  (s.incidentReports?.length?'<details><summary>Signalements ('+s.incidentReports.length+')</summary>'+s.incidentReports.map(r=>'<p class="v43-note">'+esc(r.date)+' — '+esc(r.text)+'</p>').join('')+'</details>':'')+
+  '<p>📍 '+esc(c?.address||'Adresse non renseignée')+'</p>'+
+  actions(c)+(s.status==='Terminée'?'<p class="v42-done">✓ Prestation terminée</p><button type="button" class="v43-correct" data-v43-correct="'+index+'">✏ Corriger les heures réalisées</button>':(String(s.status||'').startsWith('Absence')||s.status==='Annulée'?'':'<button type="button" class="v42-finish" data-v42-finish="'+index+'">✓ Terminer l’intervention</button>'))+'<button type="button" class="v43-report" data-v43-report="'+index+'">⚠ Signaler un incident</button> <button type="button" class="v44-extra" data-v44-extra="'+index+'">➕ Travail supplémentaire</button><div class="v44-requests" data-v44-list="'+index+'"></div> <button type="button" class="primary" data-v40-shift="'+index+'">Voir / modifier l’intervention</button></article>';
+ }).join('')||'<div class="panel"><p>Aucune intervention prévue ce jour-là.</p><button type="button" id="v40Planning">Ouvrir le planning</button></div>';
+}
+function navigate(page){document.querySelector('nav button[data-page="'+page+'"]')?.click()}
+btn.addEventListener('click',()=>{
+ document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('active',b===btn));
+ document.querySelectorAll('main section').forEach(s=>s.hidden=s!==section);
+ draw();
+});
+document.querySelectorAll('#nav button:not([data-page="myday"])').forEach(b=>b.addEventListener('click',()=>{section.hidden=true;btn.classList.remove('active')}));
+section.querySelector('#v40Today').addEventListener('click',()=>{date.value=dateLocal();draw()});
+section.querySelector('#v40Refresh').addEventListener('click',draw);
+date.addEventListener('change',draw);
+section.querySelector('#v40List').addEventListener('click',e=>{
+ const finish=e.target.closest('[data-v42-finish]');
+ if(finish){
+  const index=Number(finish.dataset.v42Finish),s=shifts[index];
+  if(!s||s.status==='Terminée'||String(s.status||'').startsWith('Absence')||s.status==='Annulée')return;
+  const c=clients.find(x=>String(x.id)===String(s.client));
+  v43OpenFinish(index);return;
+ }
+ const correct=e.target.closest('[data-v43-correct]');
+ if(correct){v431OpenCorrection(Number(correct.dataset.v43Correct));return;}
+ const report=e.target.closest('[data-v43-report]');
+ if(report){v43OpenReport(Number(report.dataset.v43Report));return;}
+ const extra=e.target.closest('[data-v44-extra]');if(extra){window.v44Open(Number(extra.dataset.v44Extra));return;}
+ const completed=e.target.closest('[data-v45-record]');if(completed){window.v45Open(Number(completed.dataset.v45Index),Number(completed.dataset.v45Record));return;}
+ const approve=e.target.closest('[data-v44-decision]');if(approve){window.v44Decision(Number(approve.dataset.v44Index),Number(approve.dataset.v44Decision),approve.dataset.v44Action);return;}
+ const b=e.target.closest('[data-v40-shift]');
+ if(b){const index=Number(b.dataset.v40Shift);if(shifts[index]){navigate('planning');openShift(index)}return}
+ if(e.target.closest('#v40Planning'))navigate('planning');
+});
+document.getElementById('v39Mode')?.addEventListener('change',draw);
+const oldRender=render;render=function(){oldRender();if(!section.hidden)draw()};
+draw();
+})();
+</script>
+
+<style id="v42style">
+.v42-finish{display:block;background:#18744d!important;color:white!important;margin:10px 0;padding:13px 16px;font-weight:700}
+.v42-done{font-weight:700;color:#18744d}
+</style>
+<style id="v41style">
+body.v39-solo #newshift label:has(select[name="worker"]),
+body.v39-solo #editshift label:has(select[name="worker"]){display:none!important}
+</style>
+<script id="v41script">
+(function(){
+'use strict';
+const mode=()=>document.getElementById('v39Mode')?.value==='solo';
+const addForm=document.getElementById('newshift');
+const editForm=document.getElementById('editshift');
+const picker=addForm.elements.namedItem('worker');
+const editPicker=editForm.elements.namedItem('worker');
+const dayBtn=document.querySelector('#nav button[data-page="myday"]');
+function ensureSoloWorker(){
+ if(!mode())return;
+ // En Solo, une intervention existante conserve son intervenante historique,
+ // même si le champ est masqué. Ne jamais effacer ou réaffecter les anciennes missions.
+ if(picker && !picker.value && picker.options.length)picker.selectedIndex=0;
+}
+document.getElementById('v39Mode')?.addEventListener('change',ensureSoloWorker);
+ensureSoloWorker();
+// La modification se sauvegarde par le formulaire de modification, jamais par « Ajouter ».
+// Un retour automatique à « Ma journée » permet de constater la nouvelle durée.
+editForm.addEventListener('submit',()=>{
+ const wasValid=editForm.checkValidity();
+ if(!wasValid)return;
+ setTimeout(()=>{
+  if(document.getElementById('shiftModal').hidden){
+   if(dayBtn)dayBtn.click();
+   const d=document.getElementById('v40Date');
+   if(d && typeof selectedShiftIndex!=='undefined' && shifts[selectedShiftIndex]){
+    d.value=shifts[selectedShiftIndex].date;
+    d.dispatchEvent(new Event('change',{bubbles:true}));
+   }
+   window.scrollTo({top:0,behavior:'smooth'});
+  }
+ },0);
+});
+})();
+</script>
+
+<style id="v43style">
+#v43Dialog[hidden]{display:none}#v43Dialog{position:fixed;inset:0;z-index:120;background:#0009;overflow:auto;padding:16px}
+#v43Dialog .panel{max-width:550px;margin:30px auto;padding:22px}
+#v43Dialog label{display:grid;gap:8px;margin:14px 0;font-size:16px}
+#v43Dialog textarea,#v43Dialog input{width:100%;font:inherit;padding:12px;border:1px solid #cbd5e1;border-radius:8px}
+#v43Dialog .v43-controls{display:flex;gap:10px;flex-wrap:wrap}
+.v43-note{white-space:pre-wrap;overflow-wrap:anywhere;background:#f0f6fc;padding:10px;border-radius:8px}
+.v43-correct{display:block;margin:8px 0 12px;background:#e8f0fb;color:#174b76;font-weight:650}.v43-report{margin:10px 5px 10px 0;background:#fff1db;color:#7c4a00;font-weight:650}
+</style>
+<div id="v43Dialog" hidden role="dialog" aria-modal="true" aria-labelledby="v43Title">
+ <div class="panel"><h2 id="v43Title">Fin de prestation</h2><p id="v43Client"></p>
+ <form id="v43Form" style="display:block">
+ <div id="v43HoursArea"><p id="v43Planned"></p><label>Heures réellement effectuées (ex. 3,5 pour 3 h 30)<input id="v43Hours" type="number" min="0.25" max="24" step="0.25" required></label></div>
+ <label id="v43CommentLabel">Commentaire facultatif<textarea id="v43Comment" rows="4" maxlength="2000" placeholder="Ex. À mon arrivée, une vitre était déjà cassée."></textarea></label>
+ <p id="v43Error" role="status" style="color:#a22323"></p>
+ <div class="v43-controls"><button class="primary" id="v43Submit" type="submit">Confirmer</button><button type="button" id="v43Cancel">Annuler</button></div>
+ </form><p class="hint">Enregistrement sur cet appareil uniquement. Aucun envoi automatique à Carla.</p></div>
+</div>
+<script id="v43script">
+(function(){
+'use strict';
+const dialog=document.getElementById('v43Dialog'), form=document.getElementById('v43Form');
+let activeIndex=-1,kind='finish';
+function show(index,type){
+ const s=shifts[index];if(!s)return;
+ activeIndex=index;kind=type;
+ const c=clients.find(x=>String(x.id)===String(s.client));
+ document.getElementById('v43Title').textContent=type==='incident'?'Signaler un incident':type==='correct'?'Corriger les heures réalisées':'Terminer la prestation';
+ document.getElementById('v43Client').textContent=(c?.name||'Cliente')+' — '+s.date;
+ document.getElementById('v43Planned').textContent='Durée prévue : '+(Number.isInteger(Number(s.hours))?s.hours+' h':Math.floor(Number(s.hours))+' h '+String(Math.round((Number(s.hours)%1)*60)).padStart(2,'0')); 
+ document.getElementById('v43HoursArea').hidden=type==='incident';
+ const input=document.getElementById('v43Hours');input.value=String(s.actualHours??s.hours);input.required=type!=='incident';
+ const comment=document.getElementById('v43Comment');comment.value=type==='correct'?(s.hoursCorrectionComment||''):'';comment.required=type==='incident';
+ document.getElementById('v43CommentLabel').firstChild.textContent=type==='incident'?'Description de l’incident (obligatoire)':'Commentaire de fin de prestation (facultatif)';
+ document.getElementById('v43Submit').textContent=type==='incident'?'Enregistrer le signalement':type==='correct'?'Enregistrer les heures corrigées':'Confirmer la fin';
+ document.getElementById('v43Error').textContent='';dialog.hidden=false;dialog.scrollTop=0;
+}
+window.v43OpenFinish=i=>show(i,'finish');
+window.v431OpenCorrection=i=>show(i,'correct');
+window.v43OpenReport=i=>show(i,'incident');
+document.getElementById('v43Cancel').addEventListener('click',()=>dialog.hidden=true);
+form.addEventListener('submit',e=>{
+ e.preventDefault();const s=shifts[activeIndex];if(!s)return;
+ const note=document.getElementById('v43Comment').value.trim();
+ if(kind==='finish'||kind==='correct'){
+  const actual=Number(document.getElementById('v43Hours').value);
+  if(!Number.isFinite(actual)||actual<=0||actual>24){document.getElementById('v43Error').textContent='Saisis une durée comprise entre 0,25 h et 24 h.';return;}
+  if(!confirm((kind==='correct'?'Enregistrer la correction : ':'Confirmer la prestation terminée avec ')+(Number.isInteger(actual)?actual+' h':Math.floor(actual)+' h '+String(Math.round((actual%1)*60)).padStart(2,'0'))+' réalisées ?'))return;
+  s.actualHours=actual;
+  if(kind==='finish'){s.finishComment=note;s.finishedAt=new Date().toISOString();s.status='Terminée';}
+  else {s.hoursCorrectedAt=new Date().toISOString();if(note)s.hoursCorrectionComment=note;}
+ }else{
+  if(!note){document.getElementById('v43Error').textContent='Décris l’incident constaté.';return;}
+  if(!Array.isArray(s.incidentReports))s.incidentReports=[];
+  s.incidentReports.push({date:new Date().toLocaleString('fr-FR'),text:note,worker:s.worker});
+ }
+ saveShifts();render();dialog.hidden=true;
+ document.querySelector('#nav button[data-page="myday"]')?.click();
+});
+})();
+</script>
+<script id="v432format"><!-- Affichage des durées en heures et minutes, saisie décimale inchangée. --></script>
+<style id="v44style">
+.v44-extra{margin:10px 5px 10px 0;background:#e6f5ed;color:#12583b;font-weight:700}
+#v44Dialog[hidden]{display:none}#v44Dialog{position:fixed;inset:0;z-index:140;background:#000a;padding:14px;overflow:auto}
+#v44Dialog .panel{max-width:580px;margin:16px auto;padding:18px}
+#v44Dialog label{display:block;margin:13px 0;font-weight:600}
+#v44Dialog textarea,#v44Dialog input,#v44Dialog select{display:block;width:100%;margin-top:6px;padding:10px;border:1px solid #bdcbd5;border-radius:8px;font:inherit}
+.v44-record{border:1px solid #d6dce2;border-radius:10px;padding:12px;margin:10px 0;background:#f8fafc;overflow-wrap:anywhere}
+.v44-photo{max-width:100%;max-height:190px;object-fit:contain;border-radius:8px;display:block;margin:8px 0}
+.v44-buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.v44-reqstatus{font-weight:700}
+</style>
+<div id="v44Dialog" hidden role="dialog" aria-modal="true" aria-labelledby="v44Title">
+ <div class="panel"><h2 id="v44Title">Déclarer un travail supplémentaire</h2><p id="v44Context"></p>
+ <form id="v44Form">
+ <label>Situation constatée / travail demandé<textarea id="v44Description" rows="3" required maxlength="1500" placeholder="Ex. Déjections du chien dans le séjour ; nettoyage et désinfection non prévus."></textarea></label>
+ <label>Durée supplémentaire estimée (minutes)<input id="v44Minutes" type="number" min="5" max="480" step="5" value="30" required></label>
+ <label>Photo AVANT (facultative)<input id="v44Photo" type="file" accept="image/*" capture="environment"></label>
+ <p class="hint">Photo réduite pour stockage sur ce téléphone. Éviter les personnes et les documents privés. Demander les autorisations nécessaires.</p>
+ <p id="v44Error" role="alert" style="color:#a32323"></p>
+ <div class="v44-buttons"><button class="primary" type="submit" id="v44Save">Enregistrer la demande</button><button type="button" id="v44Close">Annuler</button></div>
+ </form><p class="hint">Mode Pro : demande en attente jusqu'à décision de la responsable sur CET appareil. Aucun envoi à Carla n'est encore possible. Mode Solo : noter l'accord de la cliente avant d'effectuer le travail.</p></div>
+</div>
+<script id="v44script">
+(function(){
+'use strict';
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const dialog=document.getElementById('v44Dialog'),form=document.getElementById('v44Form');
+let active=-1;
+const solo=()=>document.getElementById('v39Mode')?.value==='solo';
+function photoMarkup(src){return src?'<img class="v44-photo" alt="Photo du problème avant intervention" src="'+esc(src)+'">':'';}
+function redraw(){
+ document.querySelectorAll('[data-v44-list]').forEach(el=>{
+  const i=Number(el.dataset.v44List),s=shifts[i];
+  el.innerHTML=(s?.extraRequests||[]).map((r,j)=>{
+   const status=r.status==='completed'?'Effectué':r.status==='approved'?'Autorisé':r.status==='refused'?'Refusé':'En attente d’accord';
+   const controls=r.status==='pending'?'<div class="v44-buttons"><button type="button" data-v44-index="'+i+'" data-v44-decision="'+j+'" data-v44-action="approved">✓ Enregistrer l’accord</button><button type="button" data-v44-index="'+i+'" data-v44-decision="'+j+'" data-v44-action="refused">✕ Refuser</button></div>':r.status==='approved'?'<div class="v44-buttons"><button type="button" class="primary" data-v45-index="'+i+'" data-v45-record="'+j+'">✓ Travail supplémentaire effectué</button></div>':'';
+   return '<div class="v44-record"><b>Travail supplémentaire '+(j+1)+'</b> · <span class="v44-reqstatus">'+status+'</span><p>'+esc(r.description)+'</p><p>Temps estimé : '+esc(r.minutes)+' min · Demande du '+esc(r.createdAt)+'</p>'+photoMarkup(r.photo)+(r.status==='completed'?'<p><b>Travail effectué : '+esc(r.actualMinutes)+' min</b> · '+esc(r.completedAt)+'</p>'+(r.completionNote?'<p>Compte rendu : '+esc(r.completionNote)+'</p>':'')+(r.afterPhoto?'<p><b>Photo APRÈS :</b></p>'+photoMarkup(r.afterPhoto):''):'')+ (r.decidedAt?'<p>Décision enregistrée : '+esc(r.decidedAt)+(r.approvedBy?' — '+esc(r.approvedBy):'')+'</p>':'')+controls+'</div>';
+  }).join('');
+ });
+}
+window.v44Open=function(index){
+ if(!shifts[index])return;
+ active=index;form.reset();document.getElementById('v44Minutes').value='30';
+ document.getElementById('v44Error').textContent='';
+ const c=clients.find(x=>String(x.id)===String(shifts[index].client));
+ document.getElementById('v44Context').textContent=(c?.name||'Cliente')+' — '+shifts[index].date+' · '+shifts[index].type;
+ document.getElementById('v44Title').textContent=solo()?'Documenter un travail supplémentaire':'Demander l’accord pour un travail supplémentaire';
+ document.getElementById('v44Save').textContent=solo()?'Enregistrer (en attente de l’accord cliente)':'Enregistrer (en attente de la responsable)';
+ dialog.hidden=false;
+};
+document.getElementById('v44Close').onclick=()=>dialog.hidden=true;
+async function reducePhoto(file){
+ if(!file)return '';
+ if(!file.type.startsWith('image/'))throw Error('Choisis une photo valide.');
+ if(file.size>12*1024*1024)throw Error('Photo trop volumineuse (maximum 12 Mo).');
+ const img=await createImageBitmap(file);let w=img.width,h=img.height;
+ const factor=Math.min(1,900/Math.max(w,h));w=Math.max(1,Math.round(w*factor));h=Math.max(1,Math.round(h*factor));
+ const canvas=document.createElement('canvas');canvas.width=w;canvas.height=h;
+ canvas.getContext('2d').drawImage(img,0,0,w,h);img.close?.();
+ const data=canvas.toDataURL('image/jpeg',0.62);
+ if(data.length>450000)throw Error('Photo trop volumineuse après compression. Essaie une autre photo.');
+ return data;
+}
+form.addEventListener('submit',async e=>{
+ e.preventDefault();const s=shifts[active];if(!s)return;
+ const description=document.getElementById('v44Description').value.trim();
+ const minutes=Number(document.getElementById('v44Minutes').value);
+ if(!description||!Number.isFinite(minutes)||minutes<5||minutes>480){document.getElementById('v44Error').textContent='Renseigne la description et une durée de 5 à 480 minutes.';return;}
+ const save=document.getElementById('v44Save');save.disabled=true;
+ try{
+  const photo=await reducePhoto(document.getElementById('v44Photo').files[0]);
+  const record={description,minutes,photo,status:'pending',createdAt:new Date().toLocaleString('fr-FR'),requestedBy:solo()?'Indépendante':'Intervenante',mode:solo()?'solo':'pro'};
+  if(!Array.isArray(s.extraRequests))s.extraRequests=[];
+  s.extraRequests.push(record);
+  try{localStorage.setItem('domeo-v19-shifts',JSON.stringify(shifts));}
+  catch(err){s.extraRequests.pop();throw Error('Stockage du téléphone saturé : la demande n’a pas été enregistrée. Réduis la photo ou utilise une photo plus petite.');}
+  dialog.hidden=true;
+  document.querySelector('#nav button[data-page="myday"]')?.click();redraw();
+ }catch(err){document.getElementById('v44Error').textContent=err.message||'Erreur lors de la photo.';}
+ finally{save.disabled=false;}
+});
+window.v44Decision=function(index,j,decision){
+ const s=shifts[index],r=s?.extraRequests?.[j];if(!r||r.status!=='pending')return;
+ if(solo()){
+  if(!confirm(decision==='approved'?'La cliente a-t-elle bien autorisé ce travail supplémentaire ?':'Confirmer le refus du travail supplémentaire ?'))return;
+ }else{
+  if(!confirm('Cette décision doit être saisie par Carla ou une responsable autorisée sur cet appareil. Confirmer ?'))return;
+ }
+ const name=solo()?'Accord cliente déclaré':'Responsable (validation locale)';
+ r.status=decision;r.decidedAt=new Date().toLocaleString('fr-FR');r.approvedBy=name;
+ try{localStorage.setItem('domeo-v19-shifts',JSON.stringify(shifts));}catch(e){r.status='pending';delete r.decidedAt;delete r.approvedBy;alert('Enregistrement impossible : stockage plein.');return;}
+ redraw();
+};
+const navBtn=document.querySelector('#nav button[data-page="myday"]');
+navBtn?.addEventListener('click',()=>setTimeout(redraw,0));
+document.getElementById('v40Date')?.addEventListener('change',()=>setTimeout(redraw,0));
+document.getElementById('v40Refresh')?.addEventListener('click',()=>setTimeout(redraw,0));
+document.getElementById('v39Mode')?.addEventListener('change',()=>setTimeout(redraw,0));
+})();
+</script>
+
+<style id="v45style">
+#v45Dialog[hidden]{display:none}#v45Dialog{position:fixed;inset:0;z-index:160;background:#000a;overflow:auto;padding:15px}
+#v45Dialog .panel{max-width:550px;margin:20px auto;padding:18px}
+#v45Dialog label{display:block;font-weight:600;margin:12px 0}
+#v45Dialog input,#v45Dialog textarea{display:block;width:100%;box-sizing:border-box;padding:10px;margin-top:5px;border:1px solid #aebbc7;border-radius:8px;font:inherit}
+</style>
+<div id="v45Dialog" role="dialog" aria-modal="true" aria-labelledby="v45Title" hidden>
+ <div class="panel"><h2 id="v45Title">Travail supplémentaire effectué</h2><p id="v45Context"></p>
+ <form id="v45Form">
+ <label>Durée réellement effectuée (minutes)<input id="v45Minutes" type="number" min="1" max="480" step="1" required></label>
+ <label>Commentaire de fin (facultatif)<textarea id="v45Note" rows="3" maxlength="1500" placeholder="Ex. Sol nettoyé et désinfecté."></textarea></label>
+ <label>Photo APRÈS (facultative)<input id="v45Photo" type="file" accept="image/*" capture="environment"></label>
+ <p class="hint">Ne prends pas de photos de personnes ou de documents privés. Les photos restent uniquement sur cet appareil dans ce prototype.</p>
+ <p id="v45Error" role="alert" style="color:#a32323"></p>
+ <div class="v44-buttons"><button class="primary" id="v45Save" type="submit">Confirmer le travail effectué</button><button id="v45Cancel" type="button">Annuler</button></div>
+ </form></div>
+</div>
+<script id="v45script">
+(function(){
+'use strict';
+let activeShift=-1,activeRequest=-1;
+const dialog=document.getElementById('v45Dialog');
+const form=document.getElementById('v45Form');
+window.v45Open=function(i,j){
+ const r=shifts[i]?.extraRequests?.[j];if(!r||r.status!=='approved')return;
+ activeShift=i;activeRequest=j;form.reset();
+ document.getElementById('v45Minutes').value=r.minutes;
+ document.getElementById('v45Context').textContent=r.description+' — estimation : '+r.minutes+' min';
+ document.getElementById('v45Error').textContent='';dialog.hidden=false;
+};
+document.getElementById('v45Cancel').addEventListener('click',()=>dialog.hidden=true);
+async function photoData(file){
+ if(!file)return '';
+ if(!file.type.startsWith('image/'))throw Error('Choisis une photo valide.');
+ if(file.size>12*1024*1024)throw Error('Photo trop volumineuse (12 Mo maximum).');
+ const image=await createImageBitmap(file);
+ const factor=Math.min(1,900/Math.max(image.width,image.height));
+ const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(image.width*factor));canvas.height=Math.max(1,Math.round(image.height*factor));
+ canvas.getContext('2d').drawImage(image,0,0,canvas.width,canvas.height);image.close?.();
+ const data=canvas.toDataURL('image/jpeg',.62);
+ if(data.length>450000)throw Error('La photo compressée reste trop volumineuse. Essaie une autre photo.');
+ return data;
+}
+form.addEventListener('submit',async e=>{
+ e.preventDefault();const r=shifts[activeShift]?.extraRequests?.[activeRequest];if(!r||r.status!=='approved')return;
+ const minutes=Number(document.getElementById('v45Minutes').value);
+ if(!Number.isInteger(minutes)||minutes<1||minutes>480){document.getElementById('v45Error').textContent='Entre une durée de 1 à 480 minutes.';return;}
+ const save=document.getElementById('v45Save');save.disabled=true;
+ try{
+  const photo=await photoData(document.getElementById('v45Photo').files[0]);
+  const old={...r};
+  r.status='completed';r.actualMinutes=minutes;r.completionNote=document.getElementById('v45Note').value.trim();r.afterPhoto=photo;r.completedAt=new Date().toLocaleString('fr-FR');
+  try{localStorage.setItem('domeo-v19-shifts',JSON.stringify(shifts));}
+  catch(err){Object.keys(r).forEach(k=>delete r[k]);Object.assign(r,old);throw Error('Stockage plein : impossible d’enregistrer. Essaie sans photo.');}
+  dialog.hidden=true;
+  document.querySelector('#nav button[data-page="myday"]')?.click();
+ }catch(err){document.getElementById('v45Error').textContent=err.message||'Erreur de sauvegarde.';}
+ finally{save.disabled=false;}
+});
+})();
+</script>
+
+<style id="v46style">
+.v46-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:10px;margin:12px 0}
+.v46-stat{padding:14px;background:#f1f5f9;border-radius:12px}.v46-stat strong{display:block;font-size:27px;margin-top:7px}
+.v46-row{border:1px solid #d4dce6;border-left:5px solid #2174b7;border-radius:12px;padding:14px;margin:12px 0;background:#fff}
+.v46-row p{margin:8px 0}.v46-row img{max-width:150px;max-height:160px;object-fit:contain;border-radius:8px;margin:5px 10px 5px 0}
+.v46-tools{display:flex;gap:8px;flex-wrap:wrap}.v46-tools button{min-height:44px}
+#v46Panel[hidden]{display:none}
+</style>
+<script id="v46script">
+(function(){
+'use strict';
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const nav=document.getElementById('nav');
+const btn=document.createElement('button');btn.type='button';btn.dataset.page='extras';btn.textContent='Travaux supplémentaires';
+const anchor=nav.querySelector('[data-page="myday"]');anchor?.after(btn);
+const main=document.querySelector('main');
+const panel=document.createElement('section');panel.id='extras';panel.hidden=true;
+panel.innerHTML='<h2>Suivi des travaux supplémentaires</h2><div class="panel"><p class="hint">Demandes en attente affichées en premier. Carla peut autoriser ou refuser directement ici. Données enregistrées sur cet appareil uniquement : aucune transmission aux autres téléphones.</p><div class="v46-stats" id="v46Stats"></div><label>Afficher <select id="v46Filter"><option value="all">Toutes les demandes</option><option value="pending">En attente d’accord</option><option value="approved">Autorisées, à réaliser</option><option value="completed">Travaux effectués</option><option value="refused">Refusées</option></select></label> <button type="button" id="v46Refresh">Actualiser</button></div><div id="v46List" aria-live="polite"></div>';
+main.insertBefore(panel,document.getElementById('dashboard'));
+const names={pending:'En attente d’accord',approved:'Autorisée — à réaliser',completed:'Effectuée',refused:'Refusée'};
+function draw(){
+ const rows=[];
+ shifts.forEach((s,i)=>(s.extraRequests||[]).forEach((r,j)=>rows.push({s,i,r,j})));
+ const counts={pending:0,approved:0,completed:0,refused:0};rows.forEach(({r})=>{if(r.status in counts)counts[r.status]++});
+ panel.querySelector('#v46Stats').innerHTML=[['En attente',counts.pending],['Autorisées',counts.approved],['Effectuées',counts.completed],['Refusées',counts.refused]].map(([name,n])=>'<div class="v46-stat">'+name+'<strong>'+n+'</strong></div>').join('');
+ const filter=panel.querySelector('#v46Filter').value;
+ const selected=rows.filter(({r})=>filter==='all'||r.status===filter).sort((a,b)=>{const priority={pending:0,approved:1,completed:2,refused:3};return (priority[a.r.status]??4)-(priority[b.r.status]??4)||String(b.s.date).localeCompare(String(a.s.date));});
+ panel.querySelector('#v46List').innerHTML=selected.map(({s,i,r,j})=>{
+  const c=clients.find(x=>String(x.id)===String(s.client));const w=workers.find(x=>String(x.id)===String(s.worker));
+  return '<article class="v46-row"><b>'+esc(c?.name||'Cliente inconnue')+'</b> · '+esc(s.date)+' · '+esc(s.start)+'<p><b>'+esc(names[r.status]||r.status)+'</b> · '+esc(s.type||'Prestation')+'</p>'+
+   (document.getElementById('v39Mode')?.value==='pro'?'<p>Intervenante : '+esc(w?.name||'Non renseignée')+'</p>':'')+
+   '<p>'+esc(r.description)+'</p><p>Temps estimé : '+esc(r.minutes)+' min'+(r.status==='completed'?' · Temps réel : '+esc(r.actualMinutes)+' min':'')+'</p>'+
+   (r.photo?'<p>Photo avant :</p><img alt="Photo avant" src="'+esc(r.photo)+'">':'')+
+   (r.completionNote?'<p>Compte rendu : '+esc(r.completionNote)+'</p>':'')+
+   (r.afterPhoto?'<p>Photo après :</p><img alt="Photo après" src="'+esc(r.afterPhoto)+'">':'')+
+   (r.decidedAt?'<p>Décision : '+esc(r.decidedAt)+' · '+esc(r.approvedBy||'')+'</p>':'')+
+   '<div class="v46-tools">'+(r.status==='pending'&&document.getElementById('v39Mode')?.value==='pro'&&!document.body.classList.contains('v47-worker')?'<button type="button" class="primary" data-v49-action="approved" data-v49-i="'+i+'" data-v49-j="'+j+'">✓ Autoriser</button><button type="button" data-v49-action="refused" data-v49-i="'+i+'" data-v49-j="'+j+'">✕ Refuser</button>':'')+'<button type="button" data-v46-date="'+esc(s.date)+'">Voir dans Ma journée</button></div></article>';
+ }).join('')||'<div class="panel">Aucune demande dans cette catégorie.</div>';
+}
+btn.addEventListener('click',()=>{document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('active',b===btn));document.querySelectorAll('main section').forEach(s=>s.hidden=s!==panel);draw();});
+nav.querySelectorAll('button:not([data-page="extras"])').forEach(b=>b.addEventListener('click',()=>{panel.hidden=true;btn.classList.remove('active')}));
+panel.querySelector('#v46Filter').addEventListener('change',draw);panel.querySelector('#v46Refresh').addEventListener('click',draw);
+panel.querySelector('#v46List').addEventListener('click',e=>{const action=e.target.closest('[data-v49-action]');if(action){if(document.body.classList.contains('v47-worker')||document.getElementById('v39Mode')?.value!=='pro'){alert('Décision réservée à la responsable en mode Pro.');return;}const i=Number(action.dataset.v49I),j=Number(action.dataset.v49J);if(shifts[i]?.extraRequests?.[j]?.status!=='pending'){draw();return;}window.v44Decision?.(i,j,action.dataset.v49Action);draw();return;}const b=e.target.closest('[data-v46-date]');if(!b)return;document.querySelector('#nav button[data-page="myday"]')?.click();const date=document.getElementById('v40Date');if(date){date.value=b.dataset.v46Date;date.dispatchEvent(new Event('change',{bubbles:true}));}window.scrollTo({top:0,behavior:'smooth'});});
+document.getElementById('v39Mode')?.addEventListener('change',()=>{if(!panel.hidden)draw()});
+})();
+</script>
+
+<style id="v47style">
+.v47-access{background:#eaf3fd;border:1px solid #c4d9f0;border-radius:14px;padding:16px;margin:12px 0 20px}
+.v47-access label{display:block;margin:8px 0}.v47-access select{max-width:100%;width:100%;padding:10px}
+.v47-access .v47-warning{font-size:13px;color:#8a4808;margin-top:10px}
+body.v47-worker #nav button:not([data-page="myday"]){display:none!important}
+body.v47-worker #v39Mode{pointer-events:none;opacity:.65}
+body.v47-worker #v40List button[data-v44-approve],body.v47-worker #v40List button[data-v44-refuse]{display:none!important}
+</style>
+<script id="v47script">
+(function(){
+'use strict';
+// Simulation locale des rôles : pas de mot de passe ni de protection réelle des données.
+const main=document.querySelector('main'), mode=document.getElementById('v39Mode');
+const area=document.createElement('div');area.className='v47-access';
+area.innerHTML='<h2>🔐 Accès et rôles — démonstration V4.9</h2><p>Préparation des espaces responsable et intervenante. Aucun compte réel ni mot de passe n’est créé dans ce prototype.</p><label for="v47Role"><b>Afficher l’espace de :</b></label><select id="v47Role"><option value="manager">Responsable — Carla (simulation)</option><option value="worker">Intervenante (simulation)</option></select><div id="v47WorkerBox" hidden><label for="v47Worker"><b>Intervenante à simuler :</b></label><select id="v47Worker"></select></div><p class="v47-warning">⚠ Démonstration sur un seul téléphone : les rôles ne constituent pas une sécurité d’accès. Connexion e-mail/mot de passe et synchronisation nécessitent un serveur.</p>';
+main.insertBefore(area,main.firstChild);
+const role=area.querySelector('#v47Role'),select=area.querySelector('#v47Worker'),box=area.querySelector('#v47WorkerBox');
+const escape=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function fill(){select.innerHTML=workers.map(w=>'<option value="'+escape(w.id)+'">'+escape(w.name)+'</option>').join('');}
+fill();
+function apply(){const isWorker=role.value==='worker'&&mode.value==='pro';box.hidden=!isWorker;document.body.classList.toggle('v47-worker',isWorker);window.domeoDemoWorkerId=isWorker?select.value:null;
+if(isWorker){document.querySelector('#nav button[data-page="myday"]')?.click();}else{document.querySelector('#nav button[data-page="myday"]')?.click();}
+document.getElementById('v40Refresh')?.click();}
+role.addEventListener('change',apply);select.addEventListener('change',apply);mode.addEventListener('change',()=>{if(mode.value==='solo')role.value='manager';apply()});
+// La simulation est réinitialisée à chaque ouverture : pas de faux sentiment d'authentification.
+apply();
+})();
+</script>
+
+<style id="v48style">
+/* Restrictions de présentation, PAS des autorisations sécurisées. */
+body.v47-worker [data-v44-decision],
+body.v47-worker [data-v40-shift],
+body.v47-worker #v40Planning {display:none!important}
+.v48-note{margin:10px 0;padding:12px;border-radius:10px;background:#fff5df;color:#784611;font-size:14px}
+body.v47-worker .v48-manager-only{display:none!important}
+</style>
+<script id="v48script">
+(function(){
+'use strict';
+// Démonstration sur un seul appareil : aucune frontière de sécurité.
+const isWorker=()=>document.body.classList.contains('v47-worker')&&document.getElementById('v39Mode')?.value==='pro';
+const isOwn=(index)=>!isWorker()||String(shifts[index]?.worker)===String(window.domeoDemoWorkerId);
+// Empêcher la validation par une intervenante, même en appelant la fonction directement.
+const originalDecision=window.v44Decision;
+window.v44Decision=function(index,j,decision){
+ if(isWorker()){alert('Accès réservé à Carla ou à une responsable. La demande reste en attente.');return;}
+ return originalDecision?.(index,j,decision);
+};
+// La vue « Ma journée » est le seul écran disponible dans la simulation intervenante.
+// Protéger aussi les actions de la liste au-delà du simple masquage des boutons.
+const list=document.getElementById('v40List');
+list?.addEventListener('click',function(e){
+ if(!isWorker())return;
+ const action=e.target.closest('[data-v44-decision],[data-v40-shift],[data-v46-date],#v40Planning');
+ if(action){e.preventDefault();e.stopImmediatePropagation();alert('Cette action est réservée à la responsable.');return;}
+ const key=e.target.closest('[data-v42-finish],[data-v43-correct],[data-v43-report],[data-v44-extra],[data-v45-record]');
+ if(key){const raw=key.dataset.v42Finish??key.dataset.v43Correct??key.dataset.v43Report??key.dataset.v44Extra??key.dataset.v45Index;
+ if(!isOwn(Number(raw))){e.preventDefault();e.stopImmediatePropagation();alert('Cette intervention ne vous est pas attribuée.');}}
+ },true);
+// Sur les demandes déjà présentes, les décisions ne doivent pas apparaître en vue intervenante.
+// MutationObserver met à jour l'affichage lorsque la liste est redessinée.
+const observer=new MutationObserver(()=>{
+ if(!list)return;
+ list.querySelectorAll('[data-v44-decision]').forEach(b=>{b.hidden=isWorker();});
+});
+if(list)observer.observe(list,{childList:true,subtree:true});
+const area=document.querySelector('.v47-access');
+if(area){
+ const info=document.createElement('p');info.className='v48-note';
+ info.textContent='V4.8 : en vue intervenante, les décisions et modifications de planning sont masquées. Carla conserve les autorisations. Il s’agit de restrictions de démonstration, sans protection réelle ni synchronisation.';
+ area.appendChild(info);
+}
+})();
+</script>
+</body></html>

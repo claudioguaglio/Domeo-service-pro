@@ -1,0 +1,42 @@
+-- Exécuter après 011. Aucun test n'est conservé.
+begin;
+set local role authenticated;
+do $test$
+declare p jsonb;r jsonb;data jsonb;draft uuid;emma uuid;v bigint;mission uuid;cmd jsonb;
+begin
+ p:=jsonb_build_object('action','create_worker','request',gen_random_uuid(),'name','TEST fiche préparatoire','email','test-worker@example.invalid','phone','0000000000','kind','independent','notes','TEST notes internes confidentielles');
+ perform set_config('request.jwt.claim.sub','29cb5564-497a-4ddb-a7de-8449af3e43e0',true);
+ begin perform public.domeo_workers(p);raise exception 'FAIL création par intervenante';exception when sqlstate '42501' then null;end;
+ data:=public.domeo_plan('{"from":"2026-11-01","to":"2026-12-01"}');
+ if data->'workerProfiles'<>'[]'::jsonb then raise exception 'FAIL fiches privées exposées';end if;
+ perform set_config('request.jwt.claim.sub','054ca94c-4792-4184-81ea-9a93ab09570b',true);
+ r:=public.domeo_workers(p);draft:=(r->>'id')::uuid;
+ if public.domeo_workers(p)<>r then raise exception 'FAIL reprise création';end if;
+ begin perform public.domeo_workers(p||jsonb_build_object('request',gen_random_uuid(),'email','TEST-WORKER@example.invalid'));raise exception 'FAIL doublon email';exception when sqlstate '22023' then null;end;
+ begin perform public.domeo_workers(jsonb_build_object('action','activate_worker','worker',draft,'version',1,'request',gen_random_uuid()));raise exception 'FAIL activation sans compte';exception when sqlstate '22023' then null;end;
+ data:=public.domeo_plan('{"from":"2026-11-01","to":"2026-12-01"}');
+ select (x->>'id')::uuid,(x->>'version')::bigint into emma,v from jsonb_array_elements(data->'workerProfiles') x where x->>'userId'='29cb5564-497a-4ddb-a7de-8449af3e43e0';
+ if emma is null then raise exception 'FAIL fiche Emma absente';end if;
+ perform public.domeo_workers(jsonb_build_object('action','update_worker','worker',emma,'version',v,'request',gen_random_uuid(),'name','Emma contrôle fictif','email','emma-controle@example.invalid','phone','001122','kind','employee','notes','TEST note privée'));
+ begin perform public.domeo_workers(jsonb_build_object('action','update_worker','worker',emma,'version',v,'request',gen_random_uuid(),'name','Ancienne correction'));raise exception 'FAIL version ancienne';exception when sqlstate '40001' then null;end;
+ v:=v+1;
+ r:=public.domeo_plan(jsonb_build_object('action','create_shift','request',gen_random_uuid(),'date','2026-11-06','start','09:00','minutes',60,'service','TEST désactivation bloquée','client','20000000-0000-4000-8000-000000000001','worker','29cb5564-497a-4ddb-a7de-8449af3e43e0'));mission:=(r->>'id')::uuid;
+ cmd:=jsonb_build_object('action','deactivate_worker','worker',emma,'version',v,'request',gen_random_uuid());
+ begin perform public.domeo_workers(cmd);raise exception 'FAIL désactivation avec mission ouverte';exception when sqlstate '22023' then null;end;
+ perform public.domeo_plan(jsonb_build_object('action','cancel','shift',mission,'version',1,'request',gen_random_uuid()));
+ r:=public.domeo_workers(cmd);if public.domeo_workers(cmd)<>r then raise exception 'FAIL reprise désactivation';end if;
+ data:=public.domeo_plan('{"from":"2026-11-01","to":"2026-12-01","worker":"29cb5564-497a-4ddb-a7de-8449af3e43e0"}');
+ if exists(select 1 from jsonb_array_elements(data->'workers') x where x->>'id'='29cb5564-497a-4ddb-a7de-8449af3e43e0') or (data->'totals'->>'minutes')::int<>211 then raise exception 'FAIL liste active ou historique';end if;
+ begin perform public.domeo_plan(jsonb_build_object('action','restore','shift',mission,'version',2,'request',gen_random_uuid()));raise exception 'FAIL rétablissement avec compte inactif';exception when sqlstate '22023' then null;end;
+ perform set_config('request.jwt.claim.sub','29cb5564-497a-4ddb-a7de-8449af3e43e0',true);
+ begin perform public.domeo_plan('{"from":"2026-11-01","to":"2026-12-01"}');raise exception 'FAIL accès après désactivation';exception when sqlstate '42501' then null;end;
+ perform set_config('request.jwt.claim.sub','054ca94c-4792-4184-81ea-9a93ab09570b',true);
+ perform public.domeo_workers(jsonb_build_object('action','activate_worker','worker',emma,'version',v+1,'request',gen_random_uuid()));
+ data:=public.domeo_plan('{"from":"2026-11-01","to":"2026-12-01","worker":"054ca94c-4792-4184-81ea-9a93ab09570b"}');
+ if (data->>'count')::int<>0 or (data->'totals'->>'minutes')::int<>0 or data->'reports'->'clients'<>'[]'::jsonb or data->'reports'->'workers'<>'[]'::jsonb then raise exception 'FAIL filtre de bilan';end if;
+ perform set_config('request.jwt.claim.sub','29cb5564-497a-4ddb-a7de-8449af3e43e0',true);
+ data:=public.domeo_plan('{"from":"2026-11-01","to":"2026-12-01"}');
+ if data->'workerProfiles'<>'[]'::jsonb or (data->'totals'->>'minutes')::int<>211 then raise exception 'FAIL réactivation ou confidentialité';end if;
+end $test$;
+rollback;
+select 'PASS fiches : droits, confidentialité, création sans compte, reprise, doublon, versions, désactivation protégée, accès refusé puis réactivation, filtres et historique conservé. Tests annulés.' as resultat;

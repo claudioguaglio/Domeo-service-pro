@@ -2,13 +2,15 @@
 
 Ce fichier sert de point de reprise. Le mettre à jour après chaque livraison ; ne pas réimplémenter une fonction déjà publiée. Les sauvegardes de données restent hors du dépôt public.
 
-## Version en cours de livraison
+## Dernière livraison validée
 
 - Version fonctionnelle : `011-fiches-intervenantes` (5 novembre 2026).
-- Ce journal est livré avec le code de cette version. Vérifier le succès de GitHub Pages pour ce commit dans l'historique du dépôt avant de le déclarer en ligne.
-- Migration 011 installée ; tests serveur transactionnels PASS. Publication Pages à vérifier dans le compte rendu de livraison.
+- Commit du code : `4c188a041a3f7737b5b18d1627b3591b8f7e7ade`. GitHub Pages numéro 18 réussi.
+- Migration 011 installée ; tests serveur transactionnels PASS.
 - Tests client des fiches, de la reprise, du filtre/export et de la confidentialité : PASS.
-- Formulaire publié : contrôle réel Carla à effectuer après reconnexion. Ne pas reprendre l'implémentation pour cela ; poursuivre la validation.
+- Contrôle réel Carla PASS : fiche Emma retrouvée, filtre de ses missions/bilans, création d'une fiche fictive préparatoire sans compte, modification et relecture des notes multilignes, export filtré téléchargé et relu (211 minutes réalisées, 30 minutes de dépassement).
+- Novembre reste à 211 minutes / 119 euros. Une fiche « TEST fiche intervenante — fictive » est conservée sans accès ; ne pas la recréer lors de la reprise. Emma est toujours active. Les bascules d'accès ont été testées uniquement en transactions annulées.
+- Page : https://claudioguaglio.github.io/Domeo-service-pro/planning-connecte.html?v=4c188a0
 
 ## Version précédente publiée et validée
 
@@ -33,7 +35,7 @@ Gestion des fiches intervenantes dans Carla : contact et notes internes, recherc
 
 Fichiers : `011-fiches-intervenantes.sql`, `test-fiches-intervenantes.sql`, interface et tests client mis à jour. Sauvegarde avant migration créée le 5 novembre : 7 missions, 3 clients, 27 commandes et deux corrections de contrôle. Aucune nouvelle invitation ni aucun rattachement de compte n'est inclus dans cette étape.
 
-Le commit exact de livraison sera indiqué dans le compte rendu. Le commit qui contient ce journal et le code est identifiable directement dans l'historique GitHub ; ne pas créer un commit supplémentaire uniquement pour inscrire son propre identifiant dans le journal.
+Le présent journal est actualisé après contrôle réel dans un commit documentaire. Le code de la version 11 reste celui de `4c188a0`. Ne pas redévelopper ces fonctions : la prochaine étape est le rattachement sécurisé des nouveaux comptes, puis les autres modules listés ci-dessous.
 
 ## À faire ensuite
 

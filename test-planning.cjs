@@ -46,6 +46,18 @@ async function login(h){h.ids.email.value='test@example.invalid';h.ids.password.
  hp.queue.push({ok:true,id:'s'},finished);await hp.qa.mutate({action:'finish',shift:'s',version:2,note:''});assert(textOf(hp.ids.shifts).includes('0 h 30'));assert(!textOf(hp.ids.shifts).includes('Pointer la fin'));assert(textOf(hp.ids.shifts).includes('Terminée'));
  hp.queue.push(finished);await hp.qa.refresh(true);assert(textOf(hp.ids.shifts).includes('Terminée'));
  console.log('PASS pointage : début/fin, reprise sans doublon côté client, horaires et dépassement affichés, statut conservé après relecture simulée.');
+
+ const hc=harness();hc.base.role='manager';await login(hc);
+ assert(textOf(hc.ids.shifts).includes('Corriger un oubli de pointage'));
+ const correction=hc.ids.shifts.querySelectorAll('form').find(f=>f.querySelectorAll('textarea').some(i=>i.name==='reason'));
+ assert(correction,'manager correction form');
+ for(const input of correction.querySelectorAll('input,textarea'))input.value={started:'2026-11-02T09:00:00',ended:'2026-11-02T12:30:00',reason:'Oubli de pointage déclaré et vérifié.'}[input.name];
+ const corrected=clone(hc.base);Object.assign(corrected.shifts[0],{status:'completed',version:2,actualStartedAt:'2026-11-02T08:00:00Z',actualEndedAt:'2026-11-02T11:30:00Z',actualMinutes:210,clockCorrections:[{at:'2026-11-05T14:00:00Z',actor:'Carla',reason:'Oubli de pointage déclaré et vérifié.',before:{started:null,ended:null,minutes:null,status:'confirmed'},after:{started:'2026-11-02T08:00:00Z',ended:'2026-11-02T11:30:00Z',minutes:210,status:'completed'}}]});
+ hc.queue.push(()=>{throw new TypeError('network');});await correction.onsubmit({preventDefault(){}});const correctionRequest=clone(hc.qa.get().pending);assert.equal(correctionRequest.action,'correct_clock');assert.equal(hc.calls.at(-1).url.endsWith('/domeo_correct_clock'),true);
+ hc.queue.push({ok:true,id:'s'},corrected);await hc.qa.sendPending();assert.deepEqual(hc.calls.filter(c=>c.body.p?.action==='correct_clock').map(c=>c.body.p),[correctionRequest,correctionRequest]);
+ assert(textOf(hc.ids.shifts).includes('Historique des corrections'));assert(textOf(hc.ids.shifts).includes('Oubli de pointage déclaré et vérifié.'));
+ hc.queue.push({...corrected,role:'worker'});await hc.qa.refresh(true);assert(!textOf(hc.ids.shifts).includes('Corriger un oubli de pointage'));assert(textOf(hc.ids.shifts).includes('Historique des corrections'));
+ console.log('PASS correction : formulaire responsable, route dédiée, reprise stable, historique et intervenante sans commande de correction.');
  assert.equal(h.queue.length,0);assert.equal(h2.queue.length,0);console.log('PASS : panne, 503, reprise stable, reprise après rechargement, conflit, brouillon conservé, lecture ancienne ignorée, lecture en panne, temporisation et déconnexion.');
 })().catch(e=>{console.error(e);process.exitCode=1;});
 
